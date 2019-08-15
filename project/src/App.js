@@ -1,11 +1,21 @@
 import React from 'react'
 
 import Hero from './components/hero/index'
+import Categories from './components/categories';
+import SocialProof from './components/social-proof';
+import TryMe from './components/try-me';
+import Faq from './components/faq';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Hero />
+      <Categories />
+      <Faq />
+      <SocialProof />
+      <TryMe />
+      <Footer />
     </div>
   );
 }
