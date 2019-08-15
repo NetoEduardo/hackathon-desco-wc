@@ -16,7 +16,12 @@
     position: absolute;
     top: 0;
     left: 100px;
-    max-height: 50px;
+    height: 50px;
+
+    @media (max-width: 1000px){
+      top: 30px;
+      height: 75px;
+    }
   };
 
   .login-button {
@@ -29,6 +34,10 @@
     font-size: 14px;
     font-weight: bold;
     background-color: #00E88F;
+
+    @media (max-width: 1000px){
+      top: 50px;
+    }
   }
 
   .h1-title-hero {
