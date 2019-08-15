@@ -7,12 +7,23 @@ import TryMe from './components/try-me';
 import Faq from './components/faq';
 import Footer from './components/footer';
 
+import { animateScroll } from 'react-scroll'
 import './App.scss'
 
-function App() {
+export default class App extends React.Component {
+
+  scrollTo () {
+    const element = document.querySelector("#try-me")
+
+    if (element) {
+      animateScroll.scrollTo(element.offsetTop)
+    }
+  }
+
+ render() {
   return (
     <div className="app">
-      <Hero />
+      <Hero onClick={this.scrollTo}/>
       <Categories />
       <Faq />
       <SocialProof />
@@ -20,6 +31,5 @@ function App() {
       <Footer />
     </div>
   );
+  }
 }
-
-export default App;
