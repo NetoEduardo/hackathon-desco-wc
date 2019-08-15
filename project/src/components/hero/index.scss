@@ -1,34 +1,77 @@
 .container-hero {
   position: relative;
-  width: 100vw;
+  display: flex;
   height: 100vh;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .header-hero {
+    position: absolute;
+    top: 4%;
+    width: 100vw;
+    height: 6vh;
+  }
+
+  .desco-logo {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    max-height: 50px;
+  };
+
+  .login-button {
+    position: absolute;
+    float: right;
+    right: 50px;
+    width: 150px;
+    height: 40px;
+    border-radius: 31px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #00E88F;
+  }
 
   .h1-title-hero {
-      position: absolute;
-      box-sizing: border-box;
-      width: 300px;
-      top: 18%;
+    position: absolute;
+    width: 30vw;
+    top: 30%;
+    font-size: 96px;
 
-      @media (min-width: 1000px) {
-        display: flex;
-        justify-content: center;
-
-        width: 100%;
-      }
+    @media (max-width: 1000px) {
+      left: 5%;
+      text-align: left;
+    }
   }
 
   .h2-subtitle-hero {
-      position: absolute;
-      width: 600px;
-      top: 36%;
+    position: absolute;
+    width: 30vw;
+    top: 45%;
+    text-align: center;
+    font-size: 16px;
+
+    @media (max-width: 1000px) {
+      left: 5%;
+      width: 40vw;
+      text-align: left;
+    }
   }
 
   .cta-hero {
-      position: absolute;
-      width: 300px;
-      bottom: 12%;
-      font-size: 16px;
-  }
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 70px;
+    bottom: 12%;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    border: 1px solid black;
+    border-radius: 31px;
+    cursor: pointer;
 
+    @media (max-width: 1000px) {
+      left: 5%;
+    }
+  }
 }
