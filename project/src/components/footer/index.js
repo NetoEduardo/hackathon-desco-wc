@@ -43,7 +43,7 @@ export default class Footer extends React.Component {
             </div>
             <div className='column'>
               <h2 className='column-title'>App Descomplica</h2>
-              <ul className='links'>
+              <ul className='links' id='online-store'>
                     <li className='apple'>
                       <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/apple-store-icon.svg' />
                     </li>
