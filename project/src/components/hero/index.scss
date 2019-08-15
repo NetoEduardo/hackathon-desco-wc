@@ -1,24 +1,34 @@
 .container-hero {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
 
-    .h1-title-hero {
-        position: absolute;
-        border: 1px solid black;
-        padding: 10px 10px;
-        max-width: 300px;
-        top: 10%;
-        left: 5%;
-    }
+  .h1-title-hero {
+      position: absolute;
+      box-sizing: border-box;
+      width: 300px;
+      top: 18%;
 
-    .h2-subtitle-hero {
-        position: absolute;
-        border: 1px solid black;
-        padding: 10px 10px;
-        max-width: 300px;
-        top: 20%;
-        left: 5%;
-    }
+      @media (min-width: 1000px) {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+      }
+  }
+
+  .h2-subtitle-hero {
+      position: absolute;
+      width: 600px;
+      top: 36%;
+  }
+
+  .cta-hero {
+      position: absolute;
+      width: 300px;
+      bottom: 12%;
+      font-size: 16px;
+  }
+
 }
