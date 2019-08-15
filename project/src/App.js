@@ -1,10 +1,11 @@
-import React from 'react';
-// import './App.css';
+import React from 'react'
+
+import Hero from './components/hero/index'
 
 function App() {
   return (
     <div className="App">
-      <h1>WebDEVito rules!</h1>
+      <Hero />
     </div>
   );
 }
