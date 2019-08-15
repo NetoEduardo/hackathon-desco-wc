@@ -3,12 +3,18 @@ import './index.scss'
 
 export default class Categories extends React.Component {
 
-    render() {
-        return(
-            <div className='container-categories' >
-                <h1 className='first-title'>CATEGORIES</h1>
-                <h2 className='second-title'>DANNY DEVITO</h2>
-            </div>
-        );
-    }
+  render() {
+
+  const { 
+      id, 
+      className
+    } = this.props
+
+  return(
+    <div id={id} className={className} >
+      <h1 className='first-title'>CATEGORIES</h1>
+      <h2 className='second-title'>DANNY DEVITO</h2>
+    </div>
+  );
+}
 }
