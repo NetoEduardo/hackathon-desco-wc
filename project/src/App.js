@@ -10,11 +10,6 @@ import Footer from './components/footer';
 function App() {
   return (
     <div className="app">
-      <Hero />
-      <Categories />
-      <Faq />
-      <SocialProof />
-      <TryMe />
       <Footer />
     </div>
   );
