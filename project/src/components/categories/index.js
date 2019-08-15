@@ -13,8 +13,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: true,
-  autoplaySpeed: 21500
+  autoplay: false
 }
 export default class Categories extends React.Component {
 
@@ -30,13 +29,19 @@ export default class Categories extends React.Component {
     <div id={id} className={className} >
         <Slider className='slider-categorias' {...settings}>
           <div className='item-1'>
-            <h3>1</h3>
+            <h2>Vestibulares</h2>
+            <h3>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</h3>
+            <button>Saiba Mais</button>
           </div>
           <div className='item-2'>
-            <h3>2</h3>
+            <h2>Concursos</h2>
+            <h3>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</h3>
+            <button>Saiba Mais</button>
           </div>
           <div className='item-3'>
-            <h3>3</h3>
+            <h2>Pós-Graduação</h2>
+            <h3>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</h3>
+            <button>Saiba Mais</button>
           </div>
         </Slider>
     </div>

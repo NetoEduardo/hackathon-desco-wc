@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: yellow;
 
   .slider-categorias {
     width: 100%;
@@ -17,10 +18,18 @@
     &.slick-slider {
       width: 100%;
     }
+
+
+  .slick-dots .slick-active {
+    background:#00E88F;
+  }
   
     .slick-dots {
-      bottom: 0;
-      position: relative;
+      width: 200px;
+      bottom: initial;
+      top: 70%;
+      left: 8%;
+      position: absolute;
       margin-top: 3vh;
   
       li {
@@ -35,22 +44,87 @@
       }
     }
   }
+
   .item-1 {
     height: 700px;
     width: 100vw;
-    background-color: blue;
+
+    h2 {
+      margin-top: 6%;
+      margin-left: 10%;
+      font-size: 96px;
+      font-weight: bold;
+    }
+
+    h3 {
+      margin-left: 10%;
+      margin-top: 16px;
+      line-height: 20px;
+    }
+
+    button {
+      border-radius: 31px;
+      margin-left: 10%;
+      margin-top: 4%;
+      background-color:  #00E88F;
+      width: 250px;
+      height: 50px;
+    }
   }
 
   .item-2 {
     height: 700px;
     width: 100vw;
-    background-color: green;
+
+    h2 {
+      margin-top: 6%;
+      margin-left: 10%;
+      font-size: 96px;
+      font-weight: bold;
+    }
+
+    h3 {
+      margin-left: 10%;
+      margin-top: 16px;
+      line-height: 20px;
+    }
+
+    button {
+      border-radius: 31px;
+      margin-left: 10%;
+      margin-top: 4%;
+      background-color:  #00E88F;
+      width: 250px;
+      height: 50px;
+    }
   }
 
   .item-3 {
     height: 700px;
     width: 100vw;
-    background-color: red;
+
+
+    h2 {
+      margin-top: 6%;
+      margin-left: 10%;
+      font-size: 96px;
+      font-weight: bold;
+    }
+
+    h3 {
+      margin-left: 10%;
+      margin-top: 16px;
+      line-height: 20px;
+    }
+
+    button {
+      border-radius: 31px;
+      margin-left: 10%;
+      margin-top: 4%;
+      background-color:  #00E88F;
+      width: 250px;
+      height: 50px;
+    }
   }
 
   .first-title {
