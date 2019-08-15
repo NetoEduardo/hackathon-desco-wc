@@ -7,7 +7,7 @@ import TryMe from './components/try-me';
 import Faq from './components/faq';
 import Footer from './components/footer';
 
-import './App.scss'
+// import './App.scss'
 
 function App() {
   return (
