@@ -6,6 +6,53 @@
   align-items: center;
   justify-content: center;
 
+  .slider-categorias {
+    width: 100%;
+
+    .slick-list {
+      overflow: hidden;
+      margin: 0 auto;
+    }
+  
+    &.slick-slider {
+      width: 100%;
+    }
+  
+    .slick-dots {
+      bottom: 0;
+      position: relative;
+      margin-top: 3vh;
+  
+      li {
+        background: #c2c2c2;
+        border-radius: 50%;
+        height: 9px;
+        width: 9px;
+  
+        button:before {
+          content: "";
+        }
+      }
+    }
+  }
+  .item-1 {
+    height: 700px;
+    width: 100vw;
+    background-color: blue;
+  }
+
+  .item-2 {
+    height: 700px;
+    width: 100vw;
+    background-color: green;
+  }
+
+  .item-3 {
+    height: 700px;
+    width: 100vw;
+    background-color: red;
+  }
+
   .first-title {
   color: red;
   }
