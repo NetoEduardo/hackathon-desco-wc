@@ -1,16 +1,34 @@
 .container-hero {
-  height: 100vh;
+  position: relative;
   width: 100vw;
-  display: flex;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  .first-title {
-  color: red;
+  .h1-title-hero {
+      position: absolute;
+      box-sizing: border-box;
+      width: 300px;
+      top: 18%;
+
+      @media (min-width: 1000px) {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+      }
   }
 
-  .second-title {
-      color: blue;
+  .h2-subtitle-hero {
+      position: absolute;
+      width: 600px;
+      top: 36%;
   }
+
+  .cta-hero {
+      position: absolute;
+      width: 300px;
+      bottom: 12%;
+      font-size: 16px;
+  }
+
 }
