@@ -1,14 +1,24 @@
-.container {
-    display: flex;
+.container-hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    .first-title {
-    color: red;
+    .h1-title-hero {
+        position: absolute;
+        border: 1px solid black;
+        padding: 10px 10px;
+        max-width: 300px;
+        top: 10%;
+        left: 5%;
     }
 
-    .second-title {
-        color: blue;
+    .h2-subtitle-hero {
+        position: absolute;
+        border: 1px solid black;
+        padding: 10px 10px;
+        max-width: 300px;
+        top: 20%;
+        left: 5%;
     }
 }
