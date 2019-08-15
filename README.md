@@ -1,4 +1,5 @@
-# hackathon-desco-wc
+# Hackathon WEB-CONVERSION 2019
+
 Hackathon Project
 
 HOW TO RUN PROJECT
