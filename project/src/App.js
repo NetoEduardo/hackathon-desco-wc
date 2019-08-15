@@ -23,8 +23,8 @@ export default class App extends React.Component {
  render() {
   return (
     <div className="app">
-      <Hero onClick={this.scrollTo}/>
-      <Categories />
+      <Hero id={'hero'} className={'container-hero'} onClick={this.scrollTo}/>
+      <Categories id={'categories'} className={'container-categories'} />
       <Faq />
       <SocialProof />
       <TryMe />
