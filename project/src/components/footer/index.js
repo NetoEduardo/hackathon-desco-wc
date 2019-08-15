@@ -13,7 +13,8 @@ export default class Footer extends React.Component {
 
   render() {
     return(
-        <div className='container-footer' >
+        <section className='container-footer'>
+          <div className='wrapper-footer'>
           <header className='header'>
             <a href='/'>
               <img className='logo' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
@@ -80,7 +81,8 @@ export default class Footer extends React.Component {
                 </li>
             </ul>
           </footer>
-        </div>
+          </div>
+        </section>
     );
   }
 }
