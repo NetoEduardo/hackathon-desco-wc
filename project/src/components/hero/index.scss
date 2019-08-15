@@ -1,14 +1,16 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container-hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    .first-title {
-    color: red;
-    }
+  .first-title {
+  color: red;
+  }
 
-    .second-title {
-        color: blue;
-    }
+  .second-title {
+      color: blue;
+  }
 }
