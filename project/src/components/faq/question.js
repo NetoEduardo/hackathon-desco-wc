@@ -1,4 +1,5 @@
 import React from 'react'
+import './question.scss'
 
 import ArrowFaq from '../../images/arrow-faq.js'
 
@@ -13,7 +14,9 @@ export default class Question extends React.Component {
     }
 
     return (
-      <p className={`question-answer-${index}`}>{answer}</p>
+      <div className={`question-answer-container`}>
+        <p className={`question-answer`}>{answer}</p>
+      </div>
     );
   }
 
@@ -26,14 +29,15 @@ export default class Question extends React.Component {
   render() {
     const { item, index } = this.props
     const { isOpen } = this.state
+
     return (
-      <div className='container-question-faq'>
-        <span className={`question-faq-number-${index}`}>{index + 1}</span>
-        <span className={`question-title-${index}`}>{item.question}</span>
-        <div onClick={this.handleTabOpen}>
-          <ArrowFaq />
-        </div>
-        {isOpen && this.renderAnswer(item.answer, index)}
+      <div className={`container-question-faq${isOpen ? ' active' : ' deactivate'}`} onClick={this.handleTabOpen}>
+          <span className={`question-faq-number`}>0{index + 1}</span>
+          <span className={`question-faq-title`}>{item.question}</span>
+          <div className={`question-faq-arrow${isOpen ? ' active': ' deactivate'}`}>
+            <ArrowFaq />
+          </div>
+          {isOpen && this.renderAnswer(item.answer, index)}
       </div>
     );
   }

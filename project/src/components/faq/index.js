@@ -5,16 +5,24 @@ import Question from './question'
 
 const items = [
   {
-    question: 'quem é o melhor ator do mundo?',
-    answer: 'logicamente é o danny devito'
+    question: 'Quem é o melhor ator do mundo?',
+    answer: 'Você vai aprender os principais conceitos de HTML, CSS e Javascript em um final de semana, através de uma experiência imersiva. Nele você vai conhecer as ferramentas de aprendizagem efetivas para começar sua jornada em tech.'
   },
   {
-    question: 'quem foi maior? danny devito ou jesus',
-    answer: 'logicamente é o danny devito'
+    question: 'Quem foi maior? danny devito ou jesus',
+    answer: 'Logicamente é o danny devito'
   },
   {
-    question: 'qual foi a melhor pessoa que existiu no mundo?',
-    answer: 'logicamente é o danny devito'
+    question: 'Qual foi a melhor pessoa que existiu no mundo?',
+    answer: 'Logicamente é o danny devito'
+  },
+  {
+    question: 'Qual foi a melhor pessoa que existiu no mundo?',
+    answer: 'Logicamente é o danny devito'
+  },
+  {
+    question: 'Qual foi a melhor pessoa que existiu no mundo?',
+    answer: 'Logicamente é o danny devito'
   }
 ]
 
