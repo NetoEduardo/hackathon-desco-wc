@@ -14,7 +14,7 @@ import './App.scss'
 export default class App extends React.Component {
 
   scrollTo () {
-    const element = document.querySelector("#try-me")
+    const element = document.querySelector("#categories")
 
     if (element) {
       animateScroll.scrollTo(element.offsetTop)
@@ -28,7 +28,7 @@ export default class App extends React.Component {
       <Categories id={'categories'} className={'container-categories'} />
       <Features id={'features'} className={'container-features'}/>
       <TryMe />
-      <SocialProof />
+      <SocialProof id={'social-proof'} className={'container-social'} onClick={this.scrollTo}/>
       <Faq />
       <Footer />
     </div>
