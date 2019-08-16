@@ -15,24 +15,24 @@ export default class Footer extends React.Component {
     return(
         <section className='container-footer'>
           <div className='wrapper-footer'>
-          <header className='header'>
-            <a href='/'>
-              <img className='logo' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
-            </a>
-          </header>
-          <div className='categories'>
-            {content.map((category, index) => (
-              <div className='column'>
-                <h2 className='column-title'>{category.title}</h2>
-                <ul className='links'>
-                  {category.subcategories.map((subcategory, index) => (
-                    <li>
-                      <a href={subcategory.link}>{subcategory.title}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <header className='header'>
+              <a href='/'>
+                <img className='logo' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
+              </a>
+            </header>
+            <div className='categories'>
+              {content.map((category, index) => (
+                <div className='column'>
+                  <h2 className='column-title'>{category.title}</h2>
+                  <ul className='links'>
+                    {category.subcategories.map((subcategory, index) => (
+                      <li>
+                        <a href={subcategory.link}>{subcategory.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             <div className='column'>
               <h2 className='column-title'>Comprar um plano</h2>
               <ul className='links'>
