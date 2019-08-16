@@ -8,7 +8,6 @@ constructor() {
     super();
     this.state = {
       showBar: true,
-      tamanhoFont : 'default',
     }
   }
   
@@ -35,9 +34,25 @@ ApplyBlackContrast = () => {
   document.querySelector('#root').className = ''
   document.querySelector('#root').classList.add('blackTheme')
 }
-          
-     handleScroll() {
-         const { scroll, showBar } = this.state;
+
+
+ApplyWhiteContrast = () => {
+  document.querySelector('#root').className = ''
+  document.querySelector('#root').classList.add('whiteTheme')
+}
+
+AumentaFonte = () => {
+  document.body.className = ''
+  document.body.classList.add('font2')
+}
+
+FonteNormal = () => {
+  document.body.className = ''
+  document.body.classList.add('font1')
+}  
+     
+  handleScroll() {
+      const { scroll } = this.state;
 
 
       if (document.documentElement.scrollTop > 1000 ) {
@@ -62,8 +77,8 @@ ApplyBlackContrast = () => {
             <div className="component-header">
                 <div className="fontsize-control">
                     <span className="`access-tittle`">Acessibilidade </span>
-                    <span tabIndex="1" className="acess-itens -big" alt='Clique para aumentar o tamanho da fonte'>A+</span>
-                    <span tabIndex="2" className="acess-itens -normal" alt='Clique para deixar a fonte no tamanho padrão'>A</span>
+                    <span tabIndex="1" onClick={this.AumentaFonte} className="acess-itens -big" alt='Clique para aumentar o tamanho da fonte'>A+</span>
+                    <span tabIndex="2" onClick={this.FonteNormal} className="acess-itens -normal" alt='Clique para deixar a fonte no tamanho padrão'>-A</span>
                 </div>
                 <div className="contrast" id="ta">
                     <span className="contrast-text">Contraste </span>

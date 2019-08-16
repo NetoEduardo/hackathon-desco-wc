@@ -9,7 +9,6 @@
 @font-face {
     font-family: 'AprovaSans';
     font-style: normal;
-    font-weight: 400;
     src:
       local('Aprova'),
       local('Aprova-Regular'),
@@ -19,19 +18,17 @@
 
 @font-face {
     font-family: 'AprovaSans-Bold';
-    font-style: normal;
-    font-weight: 400;
+    font-style: bold;
     src:
       local('AprovaBold'),
       local('Aprova-Bold'),
-      url(./fonts/aprova/Aprova-Black.woff2) format('woff2'),
-      url(./fonts/aprova/Aprova-Black.woff) format('woff');
+      url(./fonts/aprova/Aprova-Bold.woff2) format('woff2'),
+      url(./fonts/aprova/Aprova-Bold.woff) format('woff');
 }
 
 @font-face {
     font-family: 'InterUI';
     font-style: normal;
-    font-weight: 400;
     src:
       local('Inter'),
       local('Inter-Regular'),
@@ -41,8 +38,7 @@
 
 @font-face {
     font-family: 'InterUI-Bold';
-    font-style: normal;
-    font-weight: 400;
+    font-style: bold;
     src:
       local('InterBold'),
       local('Inter-Bold'),
@@ -64,7 +60,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
-  // outline: none;
+  outline: none;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -81,7 +77,8 @@ body {
 }
 
 button {
-  // outline: none;
+  outline: none;
+
 }
 
 ol, ul {
