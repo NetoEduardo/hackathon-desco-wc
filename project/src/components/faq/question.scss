@@ -3,16 +3,16 @@
   position: relative;
   border-bottom: 1px solid #eaeaea;
   display: flex;
-  height: auto;
   align-items: center;
   padding: 5% 0;
+  transition: all 1s;
 
   &.active {
+    min-height: 200px;
     background-color: #fafafa !important;
-    transition: fill .3s ease;
     transform: translateY(0);
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);
-    height: 320px;
+    padding: 5% 0 0 0;
     align-items: flex-start;
   }
 
@@ -94,7 +94,7 @@
 
   @media(min-width: 1000px) {
     &.active {
-      height: 150px;
+      min-height: 270px;
     }
   
     .faq-button {
