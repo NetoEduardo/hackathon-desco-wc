@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './index.scss'
 
+import ImageFeatures from '../../assets/image-features.png'
+
 const settings = {
   dots: true,
   infinite: true,
@@ -27,23 +29,22 @@ export default class Categories extends React.Component {
 
   return(
     <div id={id} className={className} >
+        <h2>Metodologia</h2>
         <Slider className='slider-features' {...settings}>
-          <div className='item-1-features'>
-            <h2>Diferenciais</h2>
-            <h3>Aulas ao Vivo</h3>
-            <p>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</p>
+          <div className='item-features'>
+            <h3>Aulas ao vivo e gravadas</h3>
+            <p>Aulas em qualquer dispositivo e sem ter que gastar o plano de dados do seu celular.</p>
           </div>
-          <div className='item-2-features'>
-            <h2>Concursos</h2>
-            <h3>Aulas ao Vivo</h3>
-            <p>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</p>
+          <div className='item-features'>
+            <h3>Exercícios</h3>
+            <p>Listas de exercícios de vestibulares com questões inéditas e número de acertos e erros por disciplina.</p>
           </div>
-          <div className='item-3-features'>
-            <h2>Pós-Graduação</h2>
-            <h3>Aulas ao Vivo</h3>
-            <p>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</p>
+          <div className='item-features'>
+            <h3>Monitorias, redação, plano de estudos</h3>
+            <p>Listas de exercícios de vestibulares com questões inéditas e número de acertos e erros por disciplina.</p>
           </div>
         </Slider>
+        <img className='image-features' src={ImageFeatures} alt='' />
     </div>
   );
 }
