@@ -12,7 +12,6 @@ export default class Hero extends React.Component {
     id
   } = this.props
 
-  const isBlack = true;
 
   return(
     <React.Fragment>

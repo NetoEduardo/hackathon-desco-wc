@@ -68,6 +68,7 @@
     top: 30%;
     display: block;
     font-family: 'AprovaSans-Bold';
+    transition: all .10s linear;
 
     @media (max-width: 1000px) {
       left: 5%;

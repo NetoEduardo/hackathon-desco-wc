@@ -8,8 +8,7 @@ export default class AcessbilityBar extends React.Component {
    constructor() {
        super();
        this.state = {
-          showBar: true,
-          tamanhoFont : 'font1',
+          showBar: true
        }
      }
   
@@ -20,22 +19,15 @@ export default class AcessbilityBar extends React.Component {
 
       AumentaFonte = () => {
         document.body.className = ''
-        document.body.classList.add(this.state.tamanhoFont)
-        this.setState({tamanhoFont: 'font2'})
+        document.body.classList.add('font2')
         }
-        
-        DiminuirFonte = () => {
-          document.body.className = ''
-          if (this.state.tamanhoFont === 'font2'){
-            document.body.classList.add(this.state.tamanhoFont)
-            this.setState({tamanhoFont: 'font1'})
-          }
+      
+      FonteNormal = () => {
+        document.body.className = ''
+        document.body.classList.add('font1')
+      }  
 
-          if(this.state.tamanhoFont === 'font1') {
-            document.body.classList.add(this.state.tamanhoFont)
-            this.setState({tamanhoFont: 'font'})
-          }    
-          }
+ 
           
 
      handleScroll() {
@@ -61,13 +53,12 @@ export default class AcessbilityBar extends React.Component {
 
        return (
        <React.Fragment>
-           <div id="ta" className={`container-header${showBar ? ' active' : ' deactive'}`} >
+           <div className={`container-header${showBar ? ' active' : ' deactive'}`} >
                <div className="component-header">
                    <div className="fontsize-control">
-                       <span className="`access-tittle`">Acessibilidade </span>
-                       <span className="acess-itens -big">A+</span>
-                       <span className="acess-itens -normal">A</span>
-                       <span onClick={this.DiminuirFonte}className="acess-itens -small">A-</span>
+                       <span className="access-title">Acessibilidade: </span>
+                       <span onClick={this.AumentaFonte} className="acess-itens -big">A+</span>
+                       <span onClick={this.FonteNormal} className="acess-itens -normal">A</span>
                    </div>
                    <div className="contrast" id="ta">
                        <span className="contrast-text">Contraste </span>
