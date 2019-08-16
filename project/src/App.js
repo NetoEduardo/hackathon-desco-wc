@@ -28,10 +28,10 @@ export default class App extends React.Component {
       <Hero id={'hero'} className={'container-hero'} onClick={this.scrollTo} />
       <Categories id={'categories'} className={'container-categories'} />
       <Features id={'features'} className={'container-features'}/>
-      <TryMe />
+      <TryMe id={'try-me'} className={'container-try-me'} />
       <SocialProof id={'social-proof'} className={'container-social-proof'} onClick={this.scrollTo}/>
-      <Faq />
-      <Footer />
+      <Faq id={'try-me'} className={'container-faq'} />
+      <Footer id={'try-me'} className={'container-footer'} />
     </div>
   );
   }
