@@ -58,47 +58,46 @@ ApplyWhiteContrast = () => {
   document.querySelector('#root').classList.add('whiteTheme')
 }
           
-
-handleScroll() {
-  const { scroll, showBar } = this.state;
-  console.log('Document',document.documentElement.scrollTop , scroll, 'Show', showBar);
+     handleScroll() {
+         const { scroll, showBar } = this.state;
 
 
-  if (document.documentElement.scrollTop > 1000 ) {
-    this.setState({showBar: false,})
-  }
+      if (document.documentElement.scrollTop > 1000 ) {
+        this.setState({showBar: false,})
+       }
 
-  if(document.documentElement.scrollTop < scroll) {
-      this.setState({showBar: true,})
-  }
+       if(document.documentElement.scrollTop < scroll) {
+           this.setState({showBar: true,})
+       }
 
-  this.setState({scroll: document.documentElement.scrollTop })
-  }
+      this.setState({scroll: document.documentElement.scrollTop })
+   }
 
 
 
-  render() {
-  const { showBar } = this.state
+   render() {
+     const { showBar } = this.state
 
-    return (
-      <React.Fragment>
-        <div id="ta" className={`container-header${showBar ? ' active' : ' deactive'}`} >
-          <div className="component-header">
-            <div className="fontsize-control">
-              <span className="`access-tittle`">Acessibilidade </span>
-              <span className="acess-itens -big">A+</span>
-              <span className="acess-itens -normal">A</span>
-              <span onClick={this.DiminuirFonte}className="acess-itens -small">A-</span>
-            </div>
-            <div className="contrast" id="ta">
-              <span className="contrast-text">Contraste </span>
-                <span onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen -active" />
-                <span onClick={this.ApplyWhiteContrast} className="contrast-itens -white" />
-                <span className="contrast-itens -black" />
+       return (
+       <React.Fragment>
+          <div id="ta" className={`container-header${showBar ? ' active' : ' deactive'}`} >
+            <div className="component-header">
+                <div className="fontsize-control">
+                    <span className="`access-tittle`">Acessibilidade </span>
+                    <span tabIndex="1" className="acess-itens -big">A+</span>
+                    <span tabIndex="2" className="acess-itens -normal">A</span>
+                    <span tabIndex="3" onClick={this.DiminuirFonte}className="acess-itens -small">A-</span>
+                </div>
+                <div className="contrast" id="ta">
+                    <span className="contrast-text">Contraste </span>
+                        <span tabIndex="4" className="contrast-itens -lightGreen -active">Verde</span>
+                        <span tabIndex="5" className="contrast-itens -white">Branco</span>
+                        <span tabIndex="6" className="contrast-itens -black">Preto</span>
+                </div>
             </div>
           </div>
-        </div>
-      </React.Fragment>
-    );
-  }
+       </React.Fragment>
+       );
+   }
+
 }
