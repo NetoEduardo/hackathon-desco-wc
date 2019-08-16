@@ -26,7 +26,7 @@ export default class Hero extends React.Component {
           <h1 className='h1-title-hero'>Bem-vindo ao <span className='descomplica-name'>Descomplica</span> </h1>
           <h2 className='h2-subtitle-hero'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis accumsan diam, ut pretium nibh dignissim eu. Vivamus sollicitudin, nisi id iaculis.</h2>
         </div>
-        <button className='cta-hero' onClick={this.props.onClick}>AUGUSTO VTNC</button>
+        <button className='cta-hero' onClick={this.props.onClick}>Compra ai pls</button>
       </div>
     </React.Fragment>
   );
