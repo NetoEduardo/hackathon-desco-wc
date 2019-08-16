@@ -22,9 +22,11 @@ export default class Hero extends React.Component {
           <img className='desco-logo' alt='logo-descomplica' src={descomplicaLogo} />
           <button className='login-button'>Já sou aluno</button>
         </div>
-        <h1 className='h1-title-hero'>HERO TITLE</h1>
-        <h2 className='h2-subtitle-hero'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
-        <button className='cta-hero' onClick={this.props.onClick}>Click Here</button>
+        <div className='title-subtitle-container'>
+          <h1 className='h1-title-hero'>Bem-vindo ao <span className='descomplica-name'>Descomplica</span> </h1>
+          <h2 className='h2-subtitle-hero'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis accumsan diam, ut pretium nibh dignissim eu. Vivamus sollicitudin, nisi id iaculis.</h2>
+        </div>
+        <button className='cta-hero' onClick={this.props.onClick}>AUGUSTO VTNC</button>
       </div>
     </React.Fragment>
   );
