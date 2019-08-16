@@ -20,34 +20,6 @@ componentDidMount() {
   document.addEventListener('load', this.ApplyWhiteContrast);
 }
 
-AumentaFonte = () => {
-  document.body.className = ''
-
-  document.body.classList.add(this.state.tamanhoFont)
-  this.setState({tamanhoFont: 'font2'})
-}
-
-DefaultSize = () => {
-  document.body.className = ''
-
-  document.body.classList.add(this.state.tamanhoFont)
-  this.setState({tamanhoFont: 'default'})
-}
-        
-DiminuirFonte = () => {
-  document.body.className = ''
-
-  if (this.state.tamanhoFont === 'font2'){
-    document.body.classList.add(this.state.tamanhoFont)
-    this.setState({tamanhoFont: 'font1'})
-  }
-
-  if(this.state.tamanhoFont === 'font1') {
-    document.body.classList.add(this.state.tamanhoFont)
-    this.setState({tamanhoFont: 'font'})
-  }    
-}
-
 ApplyDefaultContrast = () => {
   document.querySelector('#root').className = ''
   document.querySelector('#root').classList.add('default')
@@ -84,15 +56,14 @@ ApplyWhiteContrast = () => {
             <div className="component-header">
                 <div className="fontsize-control">
                     <span className="`access-tittle`">Acessibilidade </span>
-                    <span tabIndex="1" className="acess-itens -big">A+</span>
-                    <span tabIndex="2" className="acess-itens -normal">A</span>
-                    <span tabIndex="3" onClick={this.DiminuirFonte}className="acess-itens -small">A-</span>
+                    <span tabIndex="1" className="acess-itens -big" alt='Clique para aumentar o tamanho da fonte'>A+</span>
+                    <span tabIndex="2" className="acess-itens -normal" alt='Clique para deixar a fonte no tamanho padrão'>A</span>
                 </div>
                 <div className="contrast" id="ta">
                     <span className="contrast-text">Contraste </span>
-                        <span tabIndex="4" className="contrast-itens -lightGreen -active">Verde</span>
-                        <span tabIndex="5" className="contrast-itens -white">Branco</span>
-                        <span tabIndex="6" className="contrast-itens -black">Preto</span>
+                        <span tabIndex="3" onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen -active" alt='Sem contraste' />
+                        <span tabIndex="4" onClick={this.ApplyWhiteContrast} className="contrast-itens -white" alt='Contraste branco' />
+                        <span tabIndex="5" className="contrast-itens -black" alt='Contraste preto'/>
                 </div>
             </div>
           </div>
