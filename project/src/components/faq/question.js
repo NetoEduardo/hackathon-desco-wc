@@ -16,7 +16,7 @@ export default class Question extends React.Component {
     return (
       <div className={`question-answer-container`}>
         <p className={`question-answer`}>{answer}</p>
-        <button className='faq-button'>Assinar agora</button>
+        {/* <button className='faq-button'>Assinar agora</button> */}
       </div>
     );
   }
@@ -32,7 +32,7 @@ export default class Question extends React.Component {
     const { isOpen } = this.state
 
     return (
-      <div className={`container-question-faq${isOpen ? ' active' : ' deactivate'}`} onClick={this.handleTabOpen}>
+      <div tabIndex={17 + index} className={`container-question-faq${isOpen ? ' active' : ' deactivate'}`} onClick={this.handleTabOpen}>
           <span className={`question-faq-number`}>0{index + 1}</span>
           <span className={`question-faq-title`}>{item.question}</span>
           <div className={`question-faq-arrow${isOpen ? ' active': ' deactivate'}`}>

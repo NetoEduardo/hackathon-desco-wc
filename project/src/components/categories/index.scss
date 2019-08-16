@@ -73,6 +73,8 @@
     }
 
     button {
+      position: relative;
+      z-index: 9999;
       border-radius: 31px;
       margin-left: 9%;
       margin-top: 55px;
@@ -85,6 +87,8 @@
 
       &:hover {
         cursor: pointer;
+        background-color: #00fa9a;
+        transition: all .2s ease;
       }
     }
 

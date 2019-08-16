@@ -9,6 +9,7 @@ import Faq from './components/faq';
 import Footer from './components/footer';
 
 import { animateScroll } from 'react-scroll'
+
 import './App.scss'
 
 export default class App extends React.Component {
@@ -24,11 +25,11 @@ export default class App extends React.Component {
  render() {
   return (
     <div className="app">
-      <Hero id={'hero'} className={'container-hero'} onClick={this.scrollTo}/>
+      <Hero id={'hero'} className={'container-hero'} onClick={this.scrollTo} />
       <Categories id={'categories'} className={'container-categories'} />
       <Features id={'features'} className={'container-features'}/>
       <TryMe />
-      <SocialProof id={'social-proof'} className={'container-social'} onClick={this.scrollTo}/>
+      <SocialProof id={'social-proof'} className={'container-social-proof'} onClick={this.scrollTo}/>
       <Faq />
       <Footer />
     </div>

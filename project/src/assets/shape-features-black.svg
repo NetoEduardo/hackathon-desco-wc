@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="662px" viewBox="0 0 1440 662" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Path 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.3652518%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mod—HKT-3" transform="translate(0.000000, -1596.000000)" fill="url(#linearGradient-1)" stroke="#FFF900" stroke-width="3">
+            <g id="Group-14" transform="translate(-128.000000, 1598.000000)">
+                <path d="M0.95348312,78.0848441 C313.049805,189.966415 1055.65349,-103.443821 1706,40.7899317 C1706,171.682773 2090.8437,464.071658 1706,611.571079 C1427.33333,539.19036 885.323373,556.666667 79.9701178,664 C20.8352835,387.669205 -5.5035947,192.364153 0.95348312,78.0848441 Z" id="Path-5" transform="translate(938.520821, 332.000000) scale(-1, -1) rotate(-180.000000) translate(-938.520821, -332.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
