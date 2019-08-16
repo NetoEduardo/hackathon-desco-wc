@@ -1,4 +1,3 @@
-// DEFAULT THEME
 .container-hero {
   position: relative;
   display: flex;
@@ -107,95 +106,6 @@
     font-weight: bold;
     font-family: 'AprovaSans';
     font-size: 18px;
-    cursor: pointer;
-
-    @media (max-width: 1000px) {
-      left: 5%;
-    }
-  }
-}
-
-// BLACK THEME
-.container-hero-preto {
-  position: relative;
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-
-  .header-hero {
-    position: absolute;
-    top: 4%;
-    width: 100%;
-    height: 6vh;
-  }
-
-  .desco-logo {
-    position: absolute;
-    top: 0;
-    left: 100px;
-    height: 50px;
-
-    @media (max-width: 1000px){
-      top: 30px;
-      height: 75px;
-    }
-  };
-
-  .login-button {
-    position: absolute;
-    float: right;
-    right: 50px;
-    width: 150px;
-    height: 40px;
-    border-radius: 31px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: #00E88F;
-
-    @media (max-width: 1000px){
-      top: 50px;
-    }
-  }
-
-  .h1-title-hero {
-    position: absolute;
-    width: 30vw;
-    top: 30%;
-    font-size: 96px;
-    color: green;
-
-    @media (max-width: 1000px) {
-      left: 5%;
-      text-align: left;
-    }
-  }
-
-  .h2-subtitle-hero {
-    position: absolute;
-    width: 30vw;
-    top: 45%;
-    text-align: center;
-    font-size: 16px;
-
-    @media (max-width: 1000px) {
-      left: 5%;
-      width: 40vw;
-      text-align: left;
-    }
-  }
-
-  .cta-hero {
-    position: absolute;
-    display: flex;
-    width: 300px;
-    height: 70px;
-    bottom: 12%;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-    border: 1px solid black;
-    border-radius: 31px;
     cursor: pointer;
 
     @media (max-width: 1000px) {

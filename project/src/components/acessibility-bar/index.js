@@ -9,7 +9,7 @@ constructor() {
     super();
     this.state = {
       showBar: true,
-      tamanhoFont : 'font1',
+      tamanhoFont : 'default',
       theme : 'default'
     }
   }
@@ -24,6 +24,13 @@ AumentaFonte = () => {
 
   document.body.classList.add(this.state.tamanhoFont)
   this.setState({tamanhoFont: 'font2'})
+}
+
+DefaultSize = () => {
+  document.body.className = ''
+
+  document.body.classList.add(this.state.tamanhoFont)
+  this.setState({tamanhoFont: 'default'})
 }
         
 DiminuirFonte = () => {
