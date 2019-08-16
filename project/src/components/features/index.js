@@ -11,10 +11,13 @@ import ImageFeatures from '../../assets/image-features.png'
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false
+  fade: true,
+  cssEase: 'linear',
+  arrows: false,
+  autoplay: false
 }
 export default class Categories extends React.Component {
 
