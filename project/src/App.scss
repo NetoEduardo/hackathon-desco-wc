@@ -72,8 +72,32 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  
+  
 }
+
+.font1 {
+  #ta {
+    background-color: white;
+  }
+  
+  .h1-title-hero {
+    font-size: 80px !important;
+  }
+}
+
+.font2 {
+
+  #ta {
+    background-color: black;
+  }
+
+  .h1-title-hero {
+    font-size: 150px !important;
+  }
+}
+
 ol, ul {
 	list-style: none;
 }

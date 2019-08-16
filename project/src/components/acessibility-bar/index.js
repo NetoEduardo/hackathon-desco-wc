@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './index.scss'
-
+import { all } from 'q';
 
 export default class AcessbilityBar extends React.Component {
 
@@ -9,13 +9,34 @@ export default class AcessbilityBar extends React.Component {
        super();
        this.state = {
           showBar: true,
+          tamanhoFont : 'font1',
        }
      }
-
-
+  
    componentDidMount() {
      window.onscroll = () => this.handleScroll()
+     document.addEventListener('load', this.AumentaFonte);
    }
+
+      AumentaFonte = () => {
+        document.body.className = ''
+        document.body.classList.add(this.state.tamanhoFont)
+        this.setState({tamanhoFont: 'font2'})
+        }
+        
+        DiminuirFonte = () => {
+          document.body.className = ''
+          if (this.state.tamanhoFont === 'font2'){
+            document.body.classList.add(this.state.tamanhoFont)
+            this.setState({tamanhoFont: 'font1'})
+          }
+
+          if(this.state.tamanhoFont === 'font1') {
+            document.body.classList.add(this.state.tamanhoFont)
+            this.setState({tamanhoFont: 'font'})
+          }    
+          }
+          
 
      handleScroll() {
          const { scroll, showBar } = this.state;
@@ -46,7 +67,7 @@ export default class AcessbilityBar extends React.Component {
                        <span className="`access-tittle`">Acessibilidade </span>
                        <span className="acess-itens -big">A+</span>
                        <span className="acess-itens -normal">A</span>
-                       <span className="acess-itens -small">A-</span>
+                       <span onClick={this.DiminuirFonte}className="acess-itens -small">A-</span>
                    </div>
                    <div className="contrast" id="ta">
                        <span className="contrast-text">Contraste </span>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import AcessibilityBar from './components/acessibility-bar/index'
 import Hero from './components/hero/index'
 import Categories from './components/categories';
 import Features from './components/features';
@@ -12,7 +13,7 @@ import { animateScroll } from 'react-scroll'
 import './App.scss'
 
 export default class App extends React.Component {
-
+  
   scrollTo () {
     const element = document.querySelector("#categories")
 
@@ -20,6 +21,8 @@ export default class App extends React.Component {
       animateScroll.scrollTo(element.offsetTop)
     }
   }
+   
+    
 
  render() {
   return (
