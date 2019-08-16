@@ -37,9 +37,9 @@ export default class Footer extends React.Component {
               <h2 className='column-title'>Comprar um plano</h2>
               <ul className='links'>
                     <li className='telefone'>Fale com a gente</li>
-                    <li>0800 001 7572</li>
+                    <li className='numero'>0800 001 7572</li>
                     <li className='zip-zop'>Manda um Whatsapp</li>
-                    <li>(21) 99884-3853</li>
+                    <li className='numero'>(21) 99884-3853</li>
               </ul>
             </div>
             <div className='column'>

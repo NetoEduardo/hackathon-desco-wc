@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-family: 'AprovaSans';
 
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -49,7 +50,13 @@
 
       .links {
         padding: 0;
-        list-style-type: none;
+        list-style-type: none;        
+        font-weight: normal;
+        margin-top: 8%;
+
+        .numero {
+          color: gray;
+        }
 
         li {
           margin-top: 3%;
