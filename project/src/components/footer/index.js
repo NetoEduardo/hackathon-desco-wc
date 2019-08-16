@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
           <div className='wrapper-footer'>
             <header className='header'>
               <a href='/'>
-                <img className='logo' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
+                <img className='logo' alt='logo-descomplica' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
               </a>
             </header>
             <div className='categories'>
