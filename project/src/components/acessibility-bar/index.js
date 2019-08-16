@@ -10,6 +10,7 @@ constructor() {
     this.state = {
       showBar: true,
       tamanhoFont : 'font1',
+      theme : 'default'
     }
   }
   
@@ -37,6 +38,15 @@ DiminuirFonte = () => {
     document.body.classList.add(this.state.tamanhoFont)
     this.setState({tamanhoFont: 'font'})
   }    
+}
+
+ApplyWhiteContrast = () => {
+  document.body.className = ''
+
+  if(this.state.theme === 'white') {
+    document.body.classList.add(this.state.theme)
+    this.setState({theme: 'white'})
+  }  
 }
           
 
