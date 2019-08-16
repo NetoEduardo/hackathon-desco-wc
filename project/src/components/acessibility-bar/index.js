@@ -40,7 +40,6 @@ export default class AcessbilityBar extends React.Component {
 
      handleScroll() {
          const { scroll, showBar } = this.state;
-         console.log('Document',document.documentElement.scrollTop , scroll, 'Show', showBar);
 
 
       if (document.documentElement.scrollTop > 1000 ) {

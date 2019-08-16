@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
         <section className='container-footer'>
           <div className='wrapper-footer'>
             <header className='header'>
-              <a tabIndex='20' href='/'>
+              <a tabIndex="22" href='/'>
                 <img className='logo' alt='logo-descomplica' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
               </a>
             </header>
@@ -21,7 +21,7 @@ export default class Footer extends React.Component {
                   <ul className='links'>
                     {category.subcategories.map((subcategory, index) => (
                       <li>
-                        <a tabIndex={`30` + index} href={subcategory.link}>{subcategory.title}</a>
+                        <a tabIndex={`23` + index} href={subcategory.link}>{subcategory.title}</a>
                       </li>
                     ))}
                   </ul>
@@ -49,27 +49,27 @@ export default class Footer extends React.Component {
             </div>
           </div>
           <footer className='rodape'>
-            <a tabIndex="40" href='/' alt='Clique aqui para voltar para a home do descomplica'>
+            <a tabIndex="44" href='/' alt='Clique aqui para voltar para a home do descomplica'>
               <img className='logo-menor' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/small-descomplica-icon.svg' />
             </a>
             <ul className='images'>
                 <li>
-                  <a tabIndex="41" href='https://www.facebook.com/descomplica.vestibulares/' alt='Clique aqui para acessar o facebook do descomplica.'>
+                  <a tabIndex="45" href='https://www.facebook.com/descomplica.vestibulares/' alt='Clique aqui para acessar o facebook do descomplica.'>
                     <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/fb-icon.svg' />
                   </a>
                 </li>
                 <li>
-                  <a tabIndex="42" href='https://twitter.com/descomplica' alt='Clique aqui para acessar o twitter do descomplica.'>
+                  <a tabIndex="46" href='https://twitter.com/descomplica' alt='Clique aqui para acessar o twitter do descomplica.'>
                     <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/twitter-icon.svg' />
                   </a>
                 </li>
                 <li>
-                  <a tabIndex="43" href='https://www.youtube.com/c/descomplica' alt='Clique aqui para acessar o youtube do descomplica.'>
+                  <a tabIndex="47" href='https://www.youtube.com/c/descomplica' alt='Clique aqui para acessar o youtube do descomplica.'>
                     <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/youtube-icon.svg' />
                   </a>
                 </li>
                 <li>
-                  <a tabIndex="44" href='https://www.instagram.com/descomplica/' alt='Clique aqui para acessar o instagram do descomplica.'>
+                  <a tabIndex="48" href='https://www.instagram.com/descomplica/' alt='Clique aqui para acessar o instagram do descomplica.'>
                     <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/instagram-icon.svg' />
                   </a>
                 </li>

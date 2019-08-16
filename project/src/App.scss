@@ -59,7 +59,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+  margin: 0;
+  // outline: none;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -73,8 +74,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  
-  
+}
+
+button {
+  // outline: none;
 }
 
 .font1 {

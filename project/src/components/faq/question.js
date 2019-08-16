@@ -16,7 +16,7 @@ export default class Question extends React.Component {
     return (
       <div className={`question-answer-container`}>
         <p className={`question-answer`}>{answer}</p>
-        <button tabIndex={index + 1} className='faq-button'>Assinar agora</button>
+        <button className='faq-button'>Assinar agora</button>
       </div>
     );
   }
