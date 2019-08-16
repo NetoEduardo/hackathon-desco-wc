@@ -242,6 +242,9 @@
     background-color: black;
     color: #FFF900;
 
+    .logo-footer {
+      background-image: url('../src/assets/logo-black.svg');  
+    }
     a {
       color: #FFF900 !important;
     }
@@ -252,6 +255,24 @@
       .numero {
         color: #FFF900 !important;
       }
+    }
+  }
+
+  .rodape {
+    .facebook {
+      background-image: url('../src/assets/fb-yellow.svg');   
+    }
+
+    .twitter {
+      background-image: url('../src/assets/tt-yellow.svg'); 
+    }
+
+    .youtube {
+      background-image: url('../src/assets/yt-yellow.svg'); 
+    }
+
+    .instagram {
+      background-image: url('../src/assets/insta-yellow.svg'); 
     }
   }
 }
