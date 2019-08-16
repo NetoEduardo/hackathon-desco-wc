@@ -1,16 +1,105 @@
-.container-social-proof {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .container-social-proof {
+    position: relative;
+    clear: both;
+    height: 100vh;
+    width: 100%;
+    border-top: 1px solid #eaeaea;
+    
+    .central-social-proof {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 760px; 
+      width: 80vw;
+      height: 90vh;
+      top: 50%;
+      left: 50%;
+      margin: -45vh 0 0 -40vw;
+    }
+  
+    .slider-social {
+      width: 100%;
+  
+      .slick-list {
+        overflow: hidden;
+        margin: 0 auto;
+      }
+    
+      &.slick-slider {
+        width: 100%;
+      }
+  
+  
+    .slick-dots .slick-active {
+      background:#00E88F;
+    }
+    
+      .slick-dots {
+        width: 200px;
+        bottom: initial;
+        top: 85%;
+        left: 50%;
+        margin-left: -100px;
+        position: absolute;
+        margin-top: 3vh;
+    
+        li {
+          background: #c2c2c2;
+          border-radius: 50%;
+          height: 9px;
+          width: 9px;
+    
+          button:before {
+            content: "";
+          }
+        }
+      }
+    }
+  
+    .item-1-social, .item-2-social, .item-3-social {
+      position: relative;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
 
-  .first-title {
-  color: red;
-  }
+      img {
+        width: 13%;
+      }
 
-  .second-title {
-      color: blue;
+      p {
+        font-family: "InterUI", sans-serif;
+        letter-spacing: -0.5px;
+        width: 55vw;
+        height: 40vh;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 40px;
+        line-height: 30px;
+      }
+
+      span {
+        position: absolute;
+        top: 70%;
+        font-family: 'InterUI', sans-serif;
+        color: #b1b1b1;
+      }
+    }
+
+    .green-button {
+      cursor: pointer;
+      position: absolute;
+      width: 20vw;
+      height: 5vw;
+      border-radius: 50px;
+      background-color: #00E88F;
+      border: none;
+      top: 80%;
+      font-size: 15px;
+      font-weight: bold;
+
+      :hover {
+        background-color: #b1b1b1;
+      }
+    }
   }
-}
