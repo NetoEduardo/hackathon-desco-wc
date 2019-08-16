@@ -9,6 +9,10 @@
   .slider-categorias {
     width: 100%;
 
+    .slick-slide {
+      outline: none;
+    }
+
     .slick-list {
       overflow: hidden;
       margin: 0 auto;
@@ -72,12 +76,16 @@
       border-radius: 31px;
       margin-left: 9%;
       margin-top: 55px;
-      background-color:  #00E88F;
+      background-color: #08db88;
       font-size: 16px;
       width: 250px;
       height: 60px;
       font-family: inherit;
       border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .teacher-image {
