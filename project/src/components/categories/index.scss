@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
+  border-top: 1px solid #eaeaea;
 
   .slider-categorias {
     width: 100%;
@@ -27,7 +27,7 @@
     .slick-dots {
       width: 200px;
       bottom: initial;
-      top: 70%;
+      top: 80%;
       left: 8%;
       position: absolute;
       margin-top: 3vh;
@@ -45,86 +45,44 @@
     }
   }
 
-  .item-1 {
-    height: 700px;
+  .item {
+    height: 100vh;
     width: 100%;
-    background-color: blue;
+    font-family: AprovaSans;
 
     h2 {
-      margin-top: 6%;
-      margin-left: 10%;
-      font-size: 96px;
+      margin-top: 14%;
+      margin-left: 8%;
+      font-size: 120px;
+      letter-spacing: -3.47px;
       font-weight: bold;
     }
 
     h3 {
-      margin-left: 10%;
-      margin-top: 16px;
-      line-height: 20px;
+      width: 600px;
+      margin-left: 9%;
+      margin-top: 2%;
+      line-height: 26px;
+      font-size: 24px;
+      color: #616161;
     }
 
     button {
       border-radius: 31px;
-      margin-left: 10%;
-      margin-top: 4%;
-      background-color:  #00E88F;
-      width: 250px;
-      height: 50px;
-    }
-  }
-
-  .item-2 {
-    height: 700px;
-    width: 100%;
-
-    h2 {
+      margin-left: 9%;
       margin-top: 6%;
-      margin-left: 10%;
-      font-size: 96px;
-      font-weight: bold;
-    }
-
-    h3 {
-      margin-left: 10%;
-      margin-top: 16px;
-      line-height: 20px;
-    }
-
-    button {
-      border-radius: 31px;
-      margin-left: 10%;
-      margin-top: 4%;
       background-color:  #00E88F;
+      font-size: 20px;
       width: 250px;
-      height: 50px;
-    }
-  }
-
-  .item-3 {
-    height: 700px;
-    width: 100%;
-
-
-    h2 {
-      margin-top: 6%;
-      margin-left: 10%;
-      font-size: 96px;
-      font-weight: bold;
+      height: 60px;
+      font-family: inherit;
+      border: none;
     }
 
-    h3 {
-      margin-left: 10%;
-      margin-top: 16px;
-      line-height: 20px;
-    }
-
-    button {
-      border-radius: 31px;
-      margin-left: 10%;
-      margin-top: 4%;
-      background-color:  #00E88F;
-      width: 250px;
-      height: 50px;
+    .teacher-image {
+      position: absolute;
+      top: 14%;
+      margin-left: 1000px;    
     }
   }
 

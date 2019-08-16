@@ -6,6 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './index.scss'
 
+import TeacherVestibulares from '../../assets/v2-professora-vestibulares.png'
+import TeacherEscolas from '../../assets/v2-professor-escolas.png'
+import TeacherUniversitario from '../../assets/v2-professor-universitario.png'
+import TeacherConcursos from '../../assets/v2-professor-concursos.png'
+import TeacherPos from '../../assets/v2-professor-pos.png'
+
 const settings = {
   dots: true,
   infinite: true,
@@ -17,6 +23,10 @@ const settings = {
 }
 export default class Categories extends React.Component {
 
+  openTab = url => {
+    window.open(url, '_blank')
+  };
+
   render() {
 
   const { 
@@ -24,24 +34,38 @@ export default class Categories extends React.Component {
       className
     } = this.props
 
-
   return(
     <div id={id} className={className} >
         <Slider className='slider-categorias' {...settings}>
-          <div className='item-1'>
+          <div className='item'>
             <h2>Vestibulares</h2>
-            <h3>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</h3>
-            <button>Saiba Mais</button>
+            <h3>Temos 3 planos perfeitos para você mandar bem em todos os vestibulares do país e Enem.</h3>
+            <button onClick={() => this.openTab('https://www.descomplica.com.br/')}>Saiba Mais</button>
+            <img className='teacher-image' src={TeacherVestibulares} alt={'professora-vestibulares'} />
           </div>
-          <div className='item-2'>
+          <div className='item'>
+            <h2>Reforço Escolar</h2>
+            <h3>Cursos de reforço escolar para Ensino Médio e preparatório para o Encceja.</h3>
+            <button onClick={() => this.openTab('https://www.descomplica.com.br/escolas/')}>Saiba Mais</button>
+            <img className='teacher-image' src={TeacherEscolas} alt={'professor-escolas'} />
+          </div>
+          <div className='item'>
+            <h2>Reforço <br />Universitário</h2>
+            <h3>Reforços para os cursos de Medicina, Direito e Engenharia.</h3>
+            <button onClick={() => this.openTab('https://www.descomplica.com.br/reforco/')}>Saiba Mais</button>
+            <img className='teacher-image' src={TeacherUniversitario} alt={'professora-universitario'} />
+          </div>
+          <div className='item'>
             <h2>Concursos</h2>
-            <h3>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</h3>
-            <button>Saiba Mais</button>
+            <h3>Estude para carreiras Jurídicas, Policiais, Analistas, Técnicas e Iniciantes</h3>
+            <button onClick={() => this.openTab('https://www.descomplica.com.br/concursos/')}>Saiba Mais</button>
+            <img className='teacher-image' src={TeacherConcursos} alt={'professor-concursos'} />
           </div>
-          <div className='item-3'>
+          <div className='item'>
             <h2>Pós-Graduação</h2>
-            <h3>Lorem Ipsum Dolor<br />Lorem Ipsum Dolor<br /> Lorem Ipsum Dolor</h3>
-            <button>Saiba Mais</button>
+            <h3>Pós e MBA em Gestão, Educação, Direito e Tecnologia.</h3>
+            <button onClick={() => this.openTab('https://www.descomplica.com.br/pos-graduacao/')}>Saiba Mais</button>
+            <img className='teacher-image' src={TeacherPos} alt={'professora-pos'} />
           </div>
         </Slider>
     </div>
