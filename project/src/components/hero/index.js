@@ -5,10 +5,6 @@ import AcessibilityBar from '../acessibility-bar'
 
 export default class Hero extends React.Component {
 
-  // openVLibras = () => {
-  //   window.open('https://vlibras.gov.br/app', '_top', 'width: 200, height: 100')
-  // }
-
   render() {
   const { 
     id

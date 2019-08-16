@@ -5,7 +5,6 @@ import content from './data.js'
 
 import apple from '../../assets/apple-store-icon.svg';
 import android from '../../assets/google-play-icon.svg';
-import logo from '../../assets/descomplica2.svg';
 
 export default class Footer extends React.Component {
 

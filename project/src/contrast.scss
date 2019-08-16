@@ -16,6 +16,8 @@
   }
 }
 
+
+// WHITE THEME
 .whiteTheme {
   .container-hero {
     background-image: none;
@@ -73,6 +75,36 @@
   .container-social-proof {
     .slick-dots .slick-active {
       background:#000000;
+    }
+  }
+
+  .container-faq {
+    .question-faq-arrow {
+      fill: #111;
+      circle {
+        fill: #111;;
+      }
+      
+      .second-path {
+        stroke: #111;
+        fill: #00E88F;
+      }
+      &.active {
+        fill: #00E88F;
+
+        circle {
+          fill: black;
+        }
+
+        path {
+          fill: #00E88F;
+        }
+
+        .second-path {
+          stroke: #00E88F;
+          fill: #00E88F;
+        }
+      }
     }
   }
 
