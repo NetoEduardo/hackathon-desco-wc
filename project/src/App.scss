@@ -2,6 +2,49 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+    font-family: 'AprovaSans';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Aprova'),
+      local('Aprova-Regular'),
+      url(./fonts/aprova/Aprova-Regular.woff) format('woff2'),
+      url(./fonts/aprova/Aprova-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'AprovaSans-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('AprovaBold'),
+      local('Aprova-Bold'),
+      url(./fonts/aprova/Aprova-Black.woff2) format('woff2'),
+      url(./fonts/aprova/Aprova-Black.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'InterUI';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Inter'),
+      local('Inter-Regular'),
+      url(./fonts/inter/Inter-Regular.woff) format('woff2'),
+      url(./fonts/inter/Inter-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'InterUI-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('InterBold'),
+      local('Inter-Bold'),
+      url(./fonts/inter/Inter-Bold.woff) format('woff2'),
+      url(./fonts/inter/Inter-Bold.woff) format('woff');
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
