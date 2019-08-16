@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 
 import descomplicaLogo from '../../assets/d-descomplica.svg'
+import AcessibilityBar from '../acessibility-bar'
 
 export default class Hero extends React.Component {
 
@@ -14,6 +15,7 @@ export default class Hero extends React.Component {
 
   return(
     <React.Fragment>
+      <AcessibilityBar />
       <div id={id} className={className} >
         <div className='header-hero'>
           <img className='desco-logo' alt='logo-descomplica' src={descomplicaLogo} />
