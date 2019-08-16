@@ -29,7 +29,7 @@ export default class App extends React.Component {
       <Categories id={'categories'} className={'container-categories'} />
       <Features id={'features'} className={'container-features'}/>
       <TryMe />
-      <SocialProof id={'social-proof'} className={'container-social'} onClick={this.scrollTo}/>
+      <SocialProof id={'social-proof'} className={'container-social-proof'} onClick={this.scrollTo}/>
       <Faq />
       <Footer />
     </div>

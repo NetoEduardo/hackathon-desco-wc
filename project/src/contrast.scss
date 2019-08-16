@@ -3,7 +3,15 @@
     background-image: url('../src/assets/fundo-hero.svg');
   }
 
-  .teacher-image {
+  .container-features {
+    background-image: url('../src/assets/shape-features.svg');
+  }
+
+  .container-try-me {
+    background-image: url('../src/assets/fundo-tryme.svg');
+  }
+
+  img {
     filter: grayscale(0%);
   }
 }
@@ -11,9 +19,61 @@
 .whiteTheme {
   .container-hero {
     background-image: none;
+
+    .login-button {
+      border: 1px solid #000000;
+    }
+
+    .cta-hero {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
   }
 
-  .teacher-image {
+  .container-categories {
+
+    .slick-dots .slick-active {
+      background:#000000;
+    }
+
+    .item {
+      button {
+        background-color:  #000000;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .container-social-proof {
+    .green-button {
+      background-color: #000000;
+      color: #FFFFFF;
+
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+
+  .container-features {
+    background-image: url('../src/assets/shape-features-white.svg');
+
+    .slick-dots .slick-active {
+      background:#000000;
+    }
+  }
+
+  .container-try-me {
+    background-image: url('../src/assets/fundo-tryme-white.svg');
+  }
+
+  .container-social-proof {
+    .slick-dots .slick-active {
+      background:#000000;
+    }
+  }
+
+  img {
     filter: grayscale(100%);
   }
 }
