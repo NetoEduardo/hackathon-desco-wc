@@ -17,7 +17,7 @@ export default class Hero extends React.Component {
   return(
     <React.Fragment>
       <AcessibilityBar />
-      <div id={id} className={`container-hero${ isBlack ? '-preto' : ''}`} >
+      <div id={id} className={'container-hero'} >
         <div className='header-hero'>
           <img className='desco-logo' alt='logo-descomplica' src={descomplicaLogo} />
           <button className='login-button'>Já sou aluno</button>
