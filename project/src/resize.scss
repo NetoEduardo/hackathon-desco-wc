@@ -5,29 +5,39 @@
 }
 
 .font1 {
-  transition: all .10s ease-out 0s;
   .h2-subtitle-hero {
     font-size: 20px !important;
+    transition: all 0.5s linear;
+  }
+
+  .cta-hero {
+    transition: all 0.5s linear;
+  }
+
+  .login-button {
+    transition: all 0.5s linear;
   }
 }
 
 .font2 {
-  transition: all .10s ease-out 0s;
 
   .h2-subtitle-hero {
     font-size: 30px !important;
     width: 40%;
     line-height: 40px;
+    transition: all 0.5s linear;
   } 
 
   //CTA
   .cta-hero {
     font-size: 25px;
     width: 30%;
+    transition: all 0.5s linear;
   }
 
   .login-button {
     font-size: 18px;
+    transition: all 0.5s linear;
   }
 
   //slider
@@ -36,10 +46,12 @@
       width: 575px;
       line-height: 40px;
       font-size: 30px;
+      transition: all 0.5s step-end;
     }
 
     button {
       font-size: 25px;
+      transition: all 0.5s linear;
     }
   }  
 
@@ -67,6 +79,7 @@
   }
 
   .item-2-social {
+    transition: all 0.5s linear;
     p {
       font-size: 30px;
       line-height: 40px;
@@ -92,6 +105,8 @@
 
   .green-button {
     font-size: 25px;
+    width: 350px;
+    transition: all 0.5s linear;
   }
 
   //FAQ

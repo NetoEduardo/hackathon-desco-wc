@@ -47,13 +47,13 @@ export default class Categories extends React.Component {
           </div>
           <div className='item'>
             <h2>Reforço Escolar</h2>
-            <h3>Cursos de reforço escolar para Ensino Médio e preparatório para o Encceja.</h3>
+            <h3>Cursos para o Ensino Médio e preparatório para o Encceja.</h3>
             <button tabIndex="11" onClick={() => this.openTab('https://www.descomplica.com.br/escolas/')}>Saiba mais</button>
             <img className='teacher-image' src={TeacherEscolas} alt='Na imagem, uma foto do professor Allan Rodrigues de braços cruzados' />
           </div>
           <div className='item'>
             <h2>Reforço <br />Universitário</h2>
-            <h3>Reforços para os cursos de Medicina, Direito e Engenharia.</h3>
+            <h3>Para os cursos de Medicina, Direito e Engenharia.</h3>
             <button tabIndex="12" onClick={() => this.openTab('https://www.descomplica.com.br/reforco/')}>Saiba mais</button>
             <img className='teacher-image' src={TeacherUniversitario} alt='Na imagem, uma foto do professor Renato Pellizzari de braços cruzados' />
           </div>
