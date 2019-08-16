@@ -1,0 +1,19 @@
+.default {
+  .container-hero {
+    background-image: url('../src/assets/fundo-hero.svg');
+  }
+
+  .teacher-image {
+    filter: grayscale(0%);
+  }
+}
+
+.whiteTheme {
+  .container-hero {
+    background-image: none;
+  }
+
+  .teacher-image {
+    filter: grayscale(100%);
+  }
+}

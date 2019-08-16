@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+@import './resize.scss';
+@import './contrast.scss';
+ 
 @font-face {
     font-family: 'AprovaSans';
     font-style: normal;
@@ -75,27 +79,6 @@ body {
   line-height: 1;
   
   
-}
-
-.font1 {
-  #ta {
-    background-color: white;
-  }
-  
-  .h1-title-hero {
-    font-size: 80px !important;
-  }
-}
-
-.font2 {
-
-  #ta {
-    background-color: black;
-  }
-
-  .h1-title-hero {
-    font-size: 150px !important;
-  }
 }
 
 ol, ul {

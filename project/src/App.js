@@ -9,6 +9,7 @@ import Faq from './components/faq';
 import Footer from './components/footer';
 
 import { animateScroll } from 'react-scroll'
+
 import './App.scss'
 
 export default class App extends React.Component {

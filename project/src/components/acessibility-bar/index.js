@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './index.scss'
-import { all } from 'q';
 
 export default class AcessbilityBar extends React.Component {
 
@@ -10,13 +9,15 @@ constructor() {
     this.state = {
       showBar: true,
       tamanhoFont : 'default',
-      theme : 'default'
     }
   }
   
 componentDidMount() {
   window.onscroll = () => this.handleScroll()
   document.addEventListener('load', this.AumentaFonte);
+
+  document.addEventListener('load', this.ApplyDefaultContrast);
+  document.addEventListener('load', this.ApplyWhiteContrast);
 }
 
 AumentaFonte = () => {
@@ -47,13 +48,14 @@ DiminuirFonte = () => {
   }    
 }
 
-ApplyWhiteContrast = () => {
-  document.body.className = ''
+ApplyDefaultContrast = () => {
+  document.querySelector('#root').className = ''
+  document.querySelector('#root').classList.add('default')
+}
 
-  if(this.state.theme === 'white') {
-    document.body.classList.add(this.state.theme)
-    this.setState({theme: 'white'})
-  }  
+ApplyWhiteContrast = () => {
+  document.querySelector('#root').className = ''
+  document.querySelector('#root').classList.add('whiteTheme')
 }
           
 
@@ -90,10 +92,9 @@ handleScroll() {
             </div>
             <div className="contrast" id="ta">
               <span className="contrast-text">Contraste </span>
-                <span className="contrast-itens -lightGreen -active" />
-                <span className="contrast-itens -white" />
+                <span onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen -active" />
+                <span onClick={this.ApplyWhiteContrast} className="contrast-itens -white" />
                 <span className="contrast-itens -black" />
-                <span className="contrast-itens -darkGreen" />
             </div>
           </div>
         </div>
