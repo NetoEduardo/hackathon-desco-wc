@@ -33,9 +33,9 @@ export default class Faq extends React.Component {
         <span className='title-faq'>Perguntas frequentes</span>
         <ul className='faq-list'>
           {items.map((item, index) => (
-            <li className='single-faq'>
+            <li tabIndex={`14` + index + 2} className='single-faq'>
               <Question
-                item={item} 
+                item={item}
                 index={index}
               />
             </li>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import AcessibilityBar from './components/acessibility-bar/index'
 import Hero from './components/hero/index'
 import Categories from './components/categories';
 import Features from './components/features';
@@ -12,14 +13,16 @@ import { animateScroll } from 'react-scroll'
 import './App.scss'
 
 export default class App extends React.Component {
-
+  
   scrollTo () {
-    const element = document.querySelector("#try-me")
+    const element = document.querySelector("#categories")
 
     if (element) {
       animateScroll.scrollTo(element.offsetTop)
     }
   }
+   
+    
 
  render() {
   return (
@@ -28,8 +31,8 @@ export default class App extends React.Component {
       <Categories id={'categories'} className={'container-categories'} />
       <Features id={'features'} className={'container-features'}/>
       <TryMe />
+      <SocialProof id={'social-proof'} className={'container-social'} onClick={this.scrollTo}/>
       <Faq />
-      <SocialProof />
       <Footer />
     </div>
   );

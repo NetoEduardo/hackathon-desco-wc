@@ -17,16 +17,18 @@ export default class Hero extends React.Component {
   return(
     <React.Fragment>
       <AcessibilityBar />
-      <div id={id} className={`container-hero`} >
+      <div id={id} className='container-hero' >
         <div className='header-hero'>
-          <img className='desco-logo' alt='Logo com fundo branco do Descomplica' src={descomplicaLogo} />
+          <a href="/" className='desco-logo-container'>
+            <img tabIndex="7" className='desco-logo' alt='Logo com fundo branco do Descomplica' src={descomplicaLogo} />
+          </a>
           <button tabIndex="8" className='login-button'>Já sou aluno</button>
         </div>
         <div className='title-subtitle-container'>
           <h1 className='h1-title-hero'>Bem-vindo ao <span className='descomplica-name'>Descomplica</span> </h1>
-          <h2 tabIndex="13" className='h2-subtitle-hero'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis accumsan diam, ut pretium nibh dignissim eu. Vivamus sollicitudin, nisi id iaculis.</h2>
+          <h2 className='h2-subtitle-hero'>Quer se preparar para o Enem, Vestibulares, Concursos Públicos, OAB, Encceja, reforço escolar ou ainda uma Pós-Graduação? A gente te ensina.</h2>
         </div>
-        <button tabIndex="14" className='cta-hero' onClick={this.props.onClick}>Compra ai pls</button>
+        <button tabIndex="9" className='cta-hero' onClick={this.props.onClick}>Construa seu futuro</button>
       </div>
     </React.Fragment>
   );
