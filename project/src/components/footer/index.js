@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
           <div className='wrapper-footer'>
             <header className='header'>
               <a href='/'>
-                <img className='logo' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
+                <img className='logo' alt='logo-descomplica' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
               </a>
             </header>
             <div className='categories'>
@@ -46,37 +46,37 @@ export default class Footer extends React.Component {
               <h2 className='column-title'>App Descomplica</h2>
               <ul className='links' id='online-store'>
                     <li className='apple'>
-                      <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/apple-store-icon.svg' />
+                      <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/apple-store-icon.svg' alt='Ícone da Apple Store' />
                     </li>
                     <li className='android'>
-                      <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/google-play-icon.svg' />
+                      <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/google-play-icon.svg' alt='Ícone do Google Play'/>
                     </li>
               </ul>
             </div>
           </div>
           <footer className='rodape'>
             <a href='/'>
-              <img className='logo-menor' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/small-descomplica-icon.svg' />
+              <img className='logo-menor' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/small-descomplica-icon.svg' alt='Logo pequena do Descomplica' />
             </a>
             <ul className='images'>
                 <li>
                   <a href='https://www.facebook.com/descomplica.vestibulares/'>
-                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/fb-icon.svg' />
+                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/fb-icon.svg' alt='Ícone do Facebook'/>
                   </a>
                 </li>
                 <li>
                   <a href='https://twitter.com/descomplica'>
-                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/twitter-icon.svg' />
+                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/twitter-icon.svg' alt='Ícone do Twitter'/>
                   </a>
                 </li>
                 <li>
                   <a href='https://www.youtube.com/c/descomplica'>
-                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/youtube-icon.svg' />
+                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/youtube-icon.svg' alt='Ícone do Youtube' />
                   </a>
                 </li>
                 <li>
                   <a href='https://www.instagram.com/descomplica/'>
-                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/instagram-icon.svg' />
+                    <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/instagram-icon.svg' alt='Ícone do Instagram' />
                   </a>
                 </li>
             </ul>

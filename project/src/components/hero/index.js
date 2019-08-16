@@ -19,7 +19,7 @@ export default class Hero extends React.Component {
       <AcessibilityBar />
       <div id={id} className={'container-hero'} >
         <div className='header-hero'>
-          <img className='desco-logo' alt='logo-descomplica' src={descomplicaLogo} />
+          <img className='Logo do Descomplica' alt='Logo com fundo branco do Descomplica' src={descomplicaLogo} />
           <button className='login-button'>Já sou aluno</button>
         </div>
         <div className='title-subtitle-container'>
