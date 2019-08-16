@@ -3,6 +3,14 @@ import React from 'react'
 import './index.scss'
 import content from './data.js'
 
+import apple from '../../assets/apple-store-icon.svg';
+import android from '../../assets/google-play-icon.svg';
+import logoMenor from '../../assets/small-descomplica-icon.svg';
+import facebook from '../../assets/fb-icon.svg';
+import twitter from '../../assets/twitter-icon.svg';
+import youtube from '../../assets/youtube-icon.svg';
+import instagram from '../../assets/instagram-icon.svg';
+
 export default class Footer extends React.Component {
 
   render() {
@@ -40,10 +48,10 @@ export default class Footer extends React.Component {
               <h2 className='column-title'>App Descomplica</h2>
               <ul className='links' id='online-store'>
                     <li className='apple' alt='Clique aqui para acessar o aplicativo para iphone.'>
-                      <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/apple-store-icon.svg' />
+                      <img src={ apple } />
                     </li>
                     <li className='android' alt='Clique aqui para acessar o aplicativo para android.'>
-                      <img src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/pos-grad/google-play-icon.svg' />
+                      <img src={ android } />
                     </li>
               </ul>
             </div>
