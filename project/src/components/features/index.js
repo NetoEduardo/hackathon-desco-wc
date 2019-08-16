@@ -15,7 +15,8 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: false
+  autoplay: true,
+  autoplaySpeed: 5000
 }
 export default class Categories extends React.Component {
 

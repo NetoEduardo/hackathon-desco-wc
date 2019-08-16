@@ -11,6 +11,7 @@ import TeacherEscolas from '../../assets/v2-professor-escolas.png'
 import TeacherUniversitario from '../../assets/v2-professor-universitario.png'
 import TeacherConcursos from '../../assets/v2-professor-concursos.png'
 import TeacherPos from '../../assets/v2-professor-pos.png'
+import TeacherOAB from '../../assets/v2-professora-oab.png'
 
 const settings = {
   dots: true,
@@ -19,7 +20,8 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: false
+  autoplay: true,
+  autoplaySpeed: 5000
 }
 export default class Categories extends React.Component {
 
@@ -66,6 +68,12 @@ export default class Categories extends React.Component {
             <h3>Pós e MBA em Gestão, Educação, Direito e Tecnologia.</h3>
             <button onClick={() => this.openTab('https://www.descomplica.com.br/pos-graduacao/')}>Saiba Mais</button>
             <img className='teacher-image' src={TeacherPos} alt={'professora-pos'} />
+          </div>
+          <div className='item'>
+            <h2>OAB</h2>
+            <h3>Curso preparatório para o exame da Ordem dos Advogados do Brasil.</h3>
+            <button onClick={() => this.openTab('https://masteroab.com.br/')}>Saiba Mais</button>
+            <img className='teacher-image' src={TeacherOAB} alt={'professora-oab'} />
           </div>
         </Slider>
     </div>
