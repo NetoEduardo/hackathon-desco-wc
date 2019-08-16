@@ -34,7 +34,7 @@ export default class Question extends React.Component {
     return (
       <div tabIndex={17 + index} className={`container-question-faq${isOpen ? ' active' : ' deactivate'}`} onClick={this.handleTabOpen}>
           <span className={`question-faq-number`}>0{index + 1}</span>
-          <span className={`question-faq-title`}>{item.question}</span>
+          <span className={`question-faq-title${isOpen ? ' active' : ' deactivate'}`}>{item.question}</span>
           <div className={`question-faq-arrow${isOpen ? ' active': ' deactivate'}`}>
             <ArrowFaq />
           </div>

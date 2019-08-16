@@ -77,3 +77,174 @@
     filter: grayscale(100%);
   }
 }
+
+.blackTheme {
+
+  img {
+    filter: grayscale(100%);
+  }
+
+  #ta {
+    background-color: #FFF900;
+    color: black;
+  }
+
+  .container-hero {
+    background-image: none;
+    background-color: black;
+    color: #FFF900;
+
+    .cta-hero {
+      background-color: #FFF900;
+      color: black;
+    }
+
+    .login-button {
+      border: 1px solid #FFF900;
+      background-color: black;
+      color: #FFF900;
+    }
+  }
+
+  .container-categories {
+    background-color: black;
+    color: #FFF900;
+
+    h3 {
+      color: #FFF900;
+    }
+
+    .slick-dots .slick-active {
+      background:#FFF900;
+    }
+
+    .item {
+      button {
+        background-color: #FFF900;
+        color: black;
+      }
+    }
+  }
+
+  .container-features {
+    background-color: black;
+    color: #FFF900;
+    background-image: url('../src/assets/shape-features-black.svg');
+
+    .slick-dots .slick-active {
+      background: #FFF900;
+    }
+  }
+
+  .container-try-me {
+    background-color: black;
+    background-image: url('../src/assets/fundo-tryme-black.svg');
+
+    .title-text {
+      color: #FFF900;
+    }
+  }
+
+  .container-social-proof {
+    background-color: black;
+
+    .slick-dots .slick-active {
+      background: #FFF900;
+    }
+
+    .item-1-social, .item-2-social, .item-3-social {
+      p {
+        color: #FFF900;
+      }
+
+      span {
+        color: #FFF900;
+      }
+    }
+
+    .green-button {
+      background-color: #FFF900;
+    }
+  }
+
+  .container-faq {
+    background-color: black;
+
+    .title-faq {
+    color: #FFF900;
+    }
+
+    .question-faq-title {
+      color: #FFF900;
+      &.active {
+        color: black !important;
+      }
+    }
+
+    .container-question-faq {
+      &.active {
+        background-color: #FFF900 !important;
+      }
+    }
+    
+    .question-answer {
+      color: #8c8c8c;
+    }
+
+    .question-faq-number {
+      color: #FFF900;
+    }
+
+    .faq-button {
+      background-color: #111;
+      color: #FFF900;
+      border: none;
+    }
+  
+    .question-faq-arrow {
+
+      fill: #111;
+      circle {
+        fill: #FFF900;
+      }
+      
+      .second-path {
+        stroke: #111;
+        fill: #111;
+      }
+      &.active {
+        fill: #FFF900;
+
+        circle {
+          fill: black;
+        }
+
+        path {
+          fill: #FFF900;
+        }
+
+        .second-path {
+          stroke: #FFF900;
+          fill: #FFF900;
+        }
+      }
+    }
+  }
+
+  .container-footer {
+    background-color: black;
+    color: #FFF900;
+
+    a {
+      color: #FFF900 !important;
+    }
+
+    .links {
+      color: #FFF900;
+
+      .numero {
+        color: #FFF900 !important;
+      }
+    }
+  }
+}

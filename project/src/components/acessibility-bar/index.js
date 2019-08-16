@@ -18,6 +18,7 @@ componentDidMount() {
 
   document.addEventListener('load', this.ApplyDefaultContrast);
   document.addEventListener('load', this.ApplyWhiteContrast);
+  document.addEventListener('load', this.ApplyBlackContrast);
 }
 
 ApplyDefaultContrast = () => {
@@ -28,6 +29,11 @@ ApplyDefaultContrast = () => {
 ApplyWhiteContrast = () => {
   document.querySelector('#root').className = ''
   document.querySelector('#root').classList.add('whiteTheme')
+}
+
+ApplyBlackContrast = () => {
+  document.querySelector('#root').className = ''
+  document.querySelector('#root').classList.add('blackTheme')
 }
           
      handleScroll() {
@@ -61,9 +67,9 @@ ApplyWhiteContrast = () => {
                 </div>
                 <div className="contrast" id="ta">
                     <span className="contrast-text">Contraste </span>
-                        <span tabIndex="3" onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen -active" alt='Sem contraste' />
-                        <span tabIndex="4" onClick={this.ApplyWhiteContrast} className="contrast-itens -white" alt='Contraste branco' />
-                        <span tabIndex="5" className="contrast-itens -black" alt='Contraste preto'/>
+                      <span tabIndex="3" onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen -active" alt='Sem contraste' />
+                      <span tabIndex="4" onClick={this.ApplyWhiteContrast} className="contrast-itens -white" alt='Contraste branco' />
+                      <span tabIndex="5" onClick={this.ApplyBlackContrast} className="contrast-itens -black" alt='Contraste preto'/>
                 </div>
             </div>
           </div>
