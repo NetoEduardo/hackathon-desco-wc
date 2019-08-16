@@ -35,12 +35,6 @@ ApplyBlackContrast = () => {
   document.querySelector('#root').classList.add('blackTheme')
 }
 
-
-ApplyWhiteContrast = () => {
-  document.querySelector('#root').className = ''
-  document.querySelector('#root').classList.add('whiteTheme')
-}
-
 AumentaFonte = () => {
   document.body.className = ''
   document.body.classList.add('font2')
@@ -82,7 +76,7 @@ FonteNormal = () => {
                 </div>
                 <div className="contrast" id="ta">
                     <span className="contrast-text">Contraste </span>
-                      <span tabIndex="3" onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen -active" alt='Sem contraste' />
+                      <span tabIndex="3" onClick={this.ApplyDefaultContrast} className="contrast-itens -lightGreen" alt='Sem contraste' />
                       <span tabIndex="4" onClick={this.ApplyWhiteContrast} className="contrast-itens -white" alt='Contraste branco' />
                       <span tabIndex="5" onClick={this.ApplyBlackContrast} className="contrast-itens -black" alt='Contraste preto'/>
                 </div>
