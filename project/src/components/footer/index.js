@@ -6,6 +6,7 @@ import content from './data.js'
 import apple from '../../assets/apple-store-icon.svg';
 import android from '../../assets/google-play-icon.svg';
 import logoMenor from '../../assets/small-descomplica-icon.svg';
+import logo from '../../assets/descomplica2.svg';
 import facebook from '../../assets/fb-icon.svg';
 import twitter from '../../assets/twitter-icon.svg';
 import youtube from '../../assets/youtube-icon.svg';
@@ -19,7 +20,7 @@ export default class Footer extends React.Component {
           <div className='wrapper-footer'>
             <header className='header'>
               <a href='/'>
-                <img tabIndex="24" className='logo' alt='logo-descomplica' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
+                <img tabIndex="24" className='logo' alt='logo-descomplica' src={ logo } />
               </a>
             </header>
             <div className='categories'>
