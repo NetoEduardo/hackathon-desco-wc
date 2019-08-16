@@ -20,6 +20,9 @@
   .container-hero {
     background-image: none;
 
+    .desco-logo {
+      background-image: url('../src/assets/logo-white.svg');
+    }
     .login-button {
       border: 1px solid #000000;
     }
@@ -78,8 +81,9 @@
   }
 }
 
-.blackTheme {
 
+// BLACK AND YELLOW THEME
+.blackTheme {
   img {
     filter: grayscale(100%);
   }
@@ -94,6 +98,9 @@
     background-color: black;
     color: #FFF900;
 
+    .desco-logo {
+      background-image: url('../src/assets/logo-black.svg');
+    }
     .cta-hero {
       background-color: #FFF900;
       color: black;

@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.scss'
 
-import descomplicaLogo from '../../assets/d-descomplica.svg'
 import AcessibilityBar from '../acessibility-bar'
 
 export default class Hero extends React.Component {
@@ -21,7 +20,7 @@ export default class Hero extends React.Component {
       <div id={id} className='container-hero' >
         <div className='header-hero'>
           <a href="/" className='desco-logo-container'>
-            <img tabIndex="7" className='desco-logo' alt='Logo com fundo branco do Descomplica' src={descomplicaLogo} />
+            <div tabIndex="7" className='desco-logo' alt='Logo com fundo branco do Descomplica' />
           </a>
           <button tabIndex="8" className='login-button'>Já sou aluno</button>
         </div>
