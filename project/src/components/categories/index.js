@@ -41,37 +41,37 @@ export default class Categories extends React.Component {
             <h2>Vestibulares</h2>
             <h3>Temos 3 planos perfeitos para você mandar bem em todos os vestibulares do país e Enem.</h3>
             <button onClick={() => this.openTab('https://www.descomplica.com.br/')}>Saiba Mais</button>
-            <img className='teacher-image' src={TeacherVestibulares} alt={'professora-vestibulares'} />
+            <img className='teacher-image' src={TeacherVestibulares} alt='Na imagem, uma foto da professora Lara Rocha sorrindo' />
           </div>
           <div className='item'>
             <h2>Reforço Escolar</h2>
             <h3>Cursos de reforço escolar para Ensino Médio e preparatório para o Encceja.</h3>
             <button onClick={() => this.openTab('https://www.descomplica.com.br/escolas/')}>Saiba Mais</button>
-            <img className='teacher-image' src={TeacherEscolas} alt={'professor-escolas'} />
+            <img className='teacher-image' src={TeacherEscolas} alt='Na imagem, uma foto do professor Allan Rodrigues de braços cruzados' />
           </div>
           <div className='item'>
             <h2>Reforço <br />Universitário</h2>
             <h3>Reforços para os cursos de Medicina, Direito e Engenharia.</h3>
             <button onClick={() => this.openTab('https://www.descomplica.com.br/reforco/')}>Saiba Mais</button>
-            <img className='teacher-image' src={TeacherUniversitario} alt={'professora-universitario'} />
+            <img className='teacher-image' src={TeacherUniversitario} alt='Na imagem, uma foto do professor Renato Pellizzari de braços cruzados' />
           </div>
           <div className='item'>
             <h2>Concursos</h2>
             <h3>Estude para carreiras Jurídicas, Policiais, Analistas, Técnicas e Iniciantes</h3>
             <button onClick={() => this.openTab('https://www.descomplica.com.br/concursos/')}>Saiba Mais</button>
-            <img className='teacher-image' src={TeacherConcursos} alt={'professor-concursos'} />
+            <img className='teacher-image' src={TeacherConcursos} alt='Na imagem, uma foto do professor Luiz Jungstedt de braços cruzados' />
           </div>
           <div className='item'>
             <h2>Pós-Graduação</h2>
             <h3>Pós e MBA em Gestão, Educação, Direito e Tecnologia.</h3>
             <button onClick={() => this.openTab('https://www.descomplica.com.br/pos-graduacao/')}>Saiba Mais</button>
-            <img className='teacher-image' src={TeacherPos} alt={'professora-pos'} />
+            <img className='teacher-image' src={TeacherPos} alt='Na imagem, uma foto do professor Samuel Cortez de braços cruzados' />
           </div>
           <div className='item'>
             <h2>OAB</h2>
             <h3>Curso preparatório para o exame da Ordem dos Advogados do Brasil.</h3>
             <button onClick={() => this.openTab('https://masteroab.com.br/')}>Saiba Mais</button>
-            <img className='teacher-image' src={TeacherOAB} alt={'professora-oab'} />
+            <img className='teacher-image' src={TeacherOAB} alt='Na imagem, uma foto da professora Yasmin Navega de braços cruzados' />
           </div>
         </Slider>
     </div>
