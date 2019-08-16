@@ -1,19 +1,108 @@
-.font1 {
-  #ta {
-    background-color: white;
+.font {
+  .h2-subtitle-hero {
+    font-size: 15px !important;
   }
-  
-  .h1-title-hero {
-    font-size: 80px !important;
+}
+
+.font1 {
+  transition: all .10s ease-out 0s;
+  .h2-subtitle-hero {
+    font-size: 20px !important;
   }
 }
 
 .font2 {
-  #ta {
-    background-color: black;
+  transition: all .10s ease-out 0s;
+
+  .h2-subtitle-hero {
+    font-size: 30px !important;
+    width: 40%;
+    line-height: 40px;
+  } 
+
+  //CTA
+  .cta-hero {
+    font-size: 25px;
+    width: 30%;
   }
 
-  .h1-title-hero {
-    font-size: 150px !important;
+  .login-button {
+    font-size: 18px;
+  }
+
+  //slider
+  .item {
+    h3 {
+      width: 575px;
+      line-height: 40px;
+      font-size: 30px;
+    }
+
+    button {
+      font-size: 25px;
+    }
+  }  
+
+  .item-features {
+    h3 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .item-1-social {
+    p {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    span {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .item-2-social {
+    p {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    span {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .item-3-social {
+    p {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    span {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .green-button {
+    font-size: 25px;
+  }
+
+  //FAQ
+
+  .question-faq-title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .question-answer {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
