@@ -1,16 +1,96 @@
-.container-social-proof {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .container-social-proof {
+    height: 100vh;
+    width: 100%;
+  
+    .slider-social {
+      width: 100%;
+  
+      .slick-list {
+        overflow: hidden;
+        margin: 0 auto;
+      }
+    
+      &.slick-slider {
+        width: 100%;
+      }
+  
+  
+    .slick-dots .slick-active {
+      background:#00E88F;
+    }
+    
+      .slick-dots {
+        width: 200px;
+        bottom: initial;
+        top: 100%;
+        left: 42%;
+        position: absolute;
+        margin-top: 3vh;
+    
+        li {
+          background: #c2c2c2;
+          border-radius: 50%;
+          height: 9px;
+          width: 9px;
+    
+          button:before {
+            content: "";
+          }
+        }
+      }
+    }
+  
+    .item-1-social {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
 
-  .first-title {
-  color: red;
-  }
+      img {
+        width: 10%;
+      }
 
-  .second-title {
-      color: blue;
+      p {
+        font-family: 'AprovaSans', sans-serif;
+        width: 55vw;
+        text-align: center;
+        margin-top: 40px;
+        line-height: 20px;
+      }
+    }
+  
+    .item-2-social {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 10%;
+      }
+
+      p {
+        font-family: 'AprovaSans', sans-serif;
+        width: 55vw;
+        text-align: center;
+        margin-top: 40px;
+        line-height: 20px;
+      }
+    }
+  
+    .item-3-social {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 10%;
+    }
+
+      p {
+        font-family: 'AprovaSans', sans-serif;
+        width: 55vw;
+        text-align: center;
+        margin-top: 40px;
+        line-height: 20px;
+      }
+    }
   }
-}
