@@ -1,15 +1,19 @@
 import React from 'react'
 import './index.scss'
+import computador from './computador.png'
 
 export default class TryMe extends React.Component {
 
-    render() {
-        return(
-            <div id='try-me' className='container-try-me' >
-                <div className='header-hero' />
-                <h1 className='first-title'>TRY ME</h1>
-                <h2 className='second-title'>DANNY DEVITO</h2>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div id='try-me' className='container-try-me' >
+        <div className='title-container'>
+          <span className='title-text'>Experimente nossa plataforma</span>
+        </div>
+        <div className='image-container'>
+          <img className='image' src={computador} alt="notebook-aulas" />
+        </div>
+      </div>
+    );
+  }
 }
