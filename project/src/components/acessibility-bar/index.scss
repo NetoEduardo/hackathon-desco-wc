@@ -12,44 +12,62 @@
     transition: all .10s ease-out 0s;
  
  
-    &.deactive {
-        transition: all .10s ease-in 0s;
-        top: -121px;
+  &.deactive {
+      transition: all .10s ease-in 0s;
+      top: -121px;
+  }
+ 
+  .component-header {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 150px;
+    position: relative;
+    width: 800px;
+
+    .fontsize-control {
+      float: left;
+      padding: 10px 0;
+
+      li {
+        list-style: none;
+      }
+
+      .acess-itens {
+        padding: 0 10px;
+      }
+
+      .acess-itens.-big {
+        border-right: 1px solid #979797;
+      }
+
+      .acess-itens.-normal {
+        border-right: 1px solid #979797;
+      }
     }
  
-    .component-header {
-        -moz-box-sizing: border-box;
+    .contrast {
+      float: right;
+      display: flex;
+      align-items: center;
+      padding: 7px 0;
+
+      .contrast-text {
+        margin-right: 15px;
+      }
+
+      .contrast-itens {
+        display: inline-block;
+        margin-right: 22px;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
         box-sizing: border-box;
-        margin: 0 auto;
-        padding: 0 150px;
-        position: relative;
-        width: 800px;
- 
-        .fontsize-control {
-            float: left;
-            padding: 10px 0;
-            li {
-                list-style: none;
-            }
- 
-            .acess-itens {
-                padding: 0 10px;
-            }
- 
-            .acess-itens.-big {
-                border-right: 1px solid #979797;
-            }
- 
-            .acess-itens.-normal {
-                border-right: 1px solid #979797;
-            }
+        transition: transform 200ms linear;
+
+        &:hover {
+          transform: scale(1.2);
         }
- 
-        .contrast {
-            float: right;
-            display: flex;
-            align-items: center;
-            padding: 7px 0;
 
             .contrast-text {
                 margin-right: 15px;
@@ -89,6 +107,24 @@
                 background-color:black;
                 font-size: 0;
             }
+        &.-active {
+          height: 20px;
+          width: 20px;
         }
+      }
+
+      .contrast-itens.-lightGreen {
+        background-color:#00e88f;
+      }
+
+      .contrast-itens.-white {
+        border: 1px solid #979797;
+        background-color:white;
+      }
+
+      .contrast-itens.-black {
+        background-color:black;
+      }
     }
- }
+  }
+}

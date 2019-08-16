@@ -1,43 +1,63 @@
 import React from 'react'
 
 import './index.scss'
-import { all } from 'q';
 
 export default class AcessbilityBar extends React.Component {
 
-   constructor() {
-       super();
-       this.state = {
-          showBar: true,
-          tamanhoFont : 'font1',
-       }
-     }
+constructor() {
+    super();
+    this.state = {
+      showBar: true,
+      tamanhoFont : 'default',
+    }
+  }
   
-   componentDidMount() {
-     window.onscroll = () => this.handleScroll()
-     document.addEventListener('load', this.AumentaFonte);
-   }
+componentDidMount() {
+  window.onscroll = () => this.handleScroll()
+  document.addEventListener('load', this.AumentaFonte);
 
-      AumentaFonte = () => {
-        document.body.className = ''
-        document.body.classList.add(this.state.tamanhoFont)
-        this.setState({tamanhoFont: 'font2'})
-        }
+  document.addEventListener('load', this.ApplyDefaultContrast);
+  document.addEventListener('load', this.ApplyWhiteContrast);
+}
+
+AumentaFonte = () => {
+  document.body.className = ''
+
+  document.body.classList.add(this.state.tamanhoFont)
+  this.setState({tamanhoFont: 'font2'})
+}
+
+DefaultSize = () => {
+  document.body.className = ''
+
+  document.body.classList.add(this.state.tamanhoFont)
+  this.setState({tamanhoFont: 'default'})
+}
         
-        DiminuirFonte = () => {
-          document.body.className = ''
-          if (this.state.tamanhoFont === 'font2'){
-            document.body.classList.add(this.state.tamanhoFont)
-            this.setState({tamanhoFont: 'font1'})
-          }
+DiminuirFonte = () => {
+  document.body.className = ''
 
-          if(this.state.tamanhoFont === 'font1') {
-            document.body.classList.add(this.state.tamanhoFont)
-            this.setState({tamanhoFont: 'font'})
-          }    
-          }
+  if (this.state.tamanhoFont === 'font2'){
+    document.body.classList.add(this.state.tamanhoFont)
+    this.setState({tamanhoFont: 'font1'})
+  }
+
+  if(this.state.tamanhoFont === 'font1') {
+    document.body.classList.add(this.state.tamanhoFont)
+    this.setState({tamanhoFont: 'font'})
+  }    
+}
+
+ApplyDefaultContrast = () => {
+  document.querySelector('#root').className = ''
+  document.querySelector('#root').classList.add('default')
+}
+
+ApplyWhiteContrast = () => {
+  document.querySelector('#root').className = ''
+  document.querySelector('#root').classList.add('whiteTheme')
+}
           
-
      handleScroll() {
          const { scroll, showBar } = this.state;
 
@@ -79,4 +99,5 @@ export default class AcessbilityBar extends React.Component {
        </React.Fragment>
        );
    }
+
 }
