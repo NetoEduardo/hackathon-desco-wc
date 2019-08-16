@@ -56,10 +56,6 @@ const content = [
         {
             title: 'Concursos Policiais',
             link: ''
-        },
-        {
-            title: 'Aula Grátis Concursos',
-            link: ''
         }
         ]
     },
@@ -94,88 +90,22 @@ const content = [
       ]
     },
     {
-      title: 'Redação',
-      subcategories: [
-        {
-            title: 'Redação 2016',
-            link: 'descomplica.com.br/escolas'
-        },
-        {
-          title: 'Redação 2015',
-          link: 'descomplica.com.br/escolas'
-        },
-        {
-          title: 'Redação 2014',
-          link: 'descomplica.com.br/escolas'
-        },
-        {
-          title: 'Redação 2013',
-          link: 'descomplica.com.br/escolas'
-        },
-        {
-          title: 'Redação 2012',
-          link: 'descomplica.com.br/escolas'
-        },
-        {
-          title: 'Mais redações',
-          link: 'descomplica.com.br/escolas'
-        },
-      ]
-    },
-    {
-        title: 'Educação',
-        subcategories: [
-        {
-            title: 'Blog Desconversa',
-            link: 'descomplica.com.br/escolas'
-        },
-        {
-            title: 'Simulador Sisu',
-            link: 'descomplica.com.br/encceja'
-        },
-        {
-            title: 'Gabarito Enem 2018',
-            link: ''
-        },
-        {
-            title: 'Gabarito Enem Anteriores',
-            link: ''
-        },
-        {
-            title: 'Tudo sobre Enem',
-            link: ''
-        },
-        {
-            title: 'Tudo sobre Encceja',
-            link: ''
-        },
-      ]
-    },
-    {
       title: 'Questões',
       subcategories: [
         {
-          title: 'Enem 2017',
+          title: 'Gabarito Enem anteriores',
           link: ''
         },
         {
-          title: 'Enem 2016',
+          title: 'Superaulas',
           link: ''
         },
         {
-          title: 'Enem 2015',
+          title: 'Dex',
           link: ''
         },
         {
-          title: 'Enem 2014',
-          link: ''
-        },
-        {
-          title: 'Enem 2013',
-          link: ''
-        },
-        {
-          title: 'Mais questões',
+          title: '10 segundos',
           link: ''
         },
       ]
