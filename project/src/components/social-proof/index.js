@@ -42,7 +42,7 @@ export default class SocialProof extends React.Component {
                     <span>Lívia Albuquerque</span>
                 </div>
               </Slider>
-              <button className='green-button' onClick={this.props.onClick}>Começar a estudar</button>
+              <button tabIndex="16" className='green-button' onClick={this.props.onClick}>Começar a estudar</button>
             </section>
           </div>
         );

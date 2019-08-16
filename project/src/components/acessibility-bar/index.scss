@@ -1,15 +1,15 @@
 
 .container-header {
-  background-color: #f8f8f8;
-  position: sticky;
-  display: block;
-  font-family: 'AprovaSans', sans-serif;
-  height: 30px;
-  padding: 10px 0;
-  width: 100vw;
-  top: 0;
-  z-index: 2;
-  transition: all .10s ease-out 0s;
+    background-color: #f8f8f8;
+    position: sticky;
+    display: block;
+    font-family: 'AprovaSans', sans-serif;
+    height: 30px;
+    padding: 10px 0;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    transition: all .10s ease-out 0s;
  
  
   &.deactive {
@@ -69,6 +69,44 @@
           transform: scale(1.2);
         }
 
+            .contrast-text {
+                margin-right: 15px;
+            }
+ 
+            .contrast-itens {
+                display: inline-block;
+                margin-right: 22px;
+                height: 15px;
+                width: 15px;
+                border-radius: 100%;
+                box-sizing: border-box;
+                transition: transform 200ms linear;
+ 
+                &:hover {
+                    transform: scale(1.2);
+                }
+ 
+                &.-active {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+ 
+            .contrast-itens.-lightGreen {
+                background-color:#00e88f;
+                font-size: 0;
+            }
+ 
+            .contrast-itens.-white {
+                border: 1px solid #979797;
+                background-color:white;
+                font-size: 0;
+            }
+ 
+            .contrast-itens.-black {
+                background-color:black;
+                font-size: 0;
+            }
         &.-active {
           height: 20px;
           width: 20px;
