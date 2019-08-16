@@ -17,16 +17,16 @@ export default class Hero extends React.Component {
   return(
     <React.Fragment>
       <AcessibilityBar />
-      <div id={id} className={`container-hero${ isBlack ? '-preto' : ''}`} >
+      <div id={id} className={`container-hero`} >
         <div className='header-hero'>
-          <img className='desco-logo' alt='logo-descomplica' src={descomplicaLogo} />
-          <button className='login-button'>Já sou aluno</button>
+          <img className='desco-logo' alt='Logo com fundo branco do Descomplica' src={descomplicaLogo} />
+          <button tabIndex="8" className='login-button'>Já sou aluno</button>
         </div>
         <div className='title-subtitle-container'>
           <h1 className='h1-title-hero'>Bem-vindo ao <span className='descomplica-name'>Descomplica</span> </h1>
-          <h2 className='h2-subtitle-hero'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis accumsan diam, ut pretium nibh dignissim eu. Vivamus sollicitudin, nisi id iaculis.</h2>
+          <h2 tabIndex="13" className='h2-subtitle-hero'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis accumsan diam, ut pretium nibh dignissim eu. Vivamus sollicitudin, nisi id iaculis.</h2>
         </div>
-        <button className='cta-hero' onClick={this.props.onClick}>Compra ai pls</button>
+        <button tabIndex="14" className='cta-hero' onClick={this.props.onClick}>Compra ai pls</button>
       </div>
     </React.Fragment>
   );

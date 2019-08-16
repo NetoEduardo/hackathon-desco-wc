@@ -40,23 +40,23 @@ export default class AcessbilityBar extends React.Component {
 
        return (
        <React.Fragment>
-           <div id="ta" className={`container-header${showBar ? ' active' : ' deactive'}`} >
-               <div className="component-header">
-                   <div className="fontsize-control">
-                       <span className="`access-tittle`">Acessibilidade: </span>
-                       <span className="acess-itens -big">A+</span>
-                       <span className="acess-itens -normal">A</span>
-                       <span className="acess-itens -small">A-</span>
-                   </div>
-                   <div className="contrast" id="ta">
-                       <span className="contrast-text">Contraste: </span>
-                           <span className="contrast-itens -lightGreen -active" />
-                           <span className="contrast-itens -white" />
-                           <span className="contrast-itens -black" />
-                           <span className="contrast-itens -darkGreen" />
-                   </div>
-               </div>
-           </div>
+          <div id="ta" className={`container-header${showBar ? ' active' : ' deactive'}`} >
+            <div className="component-header">
+                <div className="fontsize-control">
+                    <span className="access-tittle">Acessibilidade: </span>
+                    <span tabIndex="1" className="acess-itens -big">A+</span>
+                    <span tabIndex="2" className="acess-itens -normal">A</span>
+                    <span tabIndex="3" className="acess-itens -small">A-</span>
+                </div>
+                <div className="contrast" id="ta">
+                    <span className="contrast-text">Contraste: </span>
+                        <span tabIndex="4" className="contrast-itens -lightGreen -active" />
+                        <span tabIndex="5" className="contrast-itens -white" />
+                        <span tabIndex="6" className="contrast-itens -black" />
+                        <span tabIndex="7" className="contrast-itens -darkGreen" />
+                </div>
+            </div>
+          </div>
        </React.Fragment>
        );
    }

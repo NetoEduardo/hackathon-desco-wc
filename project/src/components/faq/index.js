@@ -9,19 +9,19 @@ const items = [
     answer: 'Você vai aprender os principais conceitos de HTML, CSS e Javascript em um final de semana, através de uma experiência imersiva. Nele você vai conhecer as ferramentas de aprendizagem efetivas para começar sua jornada em tech.'
   },
   {
-    question: 'Quem foi maior? danny devito ou jesus',
+    question: 'PERGUNTA PERGUNTA PERGUNTA PERGUNTA',
     answer: 'Logicamente é o danny devito'
   },
   {
-    question: 'Qual foi a melhor pessoa que existiu no mundo?',
+    question: 'PERGUNTA PERGUNTA PERGUNTA PERGUNTA',
     answer: 'Logicamente é o danny devito'
   },
   {
-    question: 'Qual foi a melhor pessoa que existiu no mundo?',
+    question: 'PERGUNTA PERGUNTA PERGUNTA PERGUNTA',
     answer: 'Logicamente é o danny devito'
   },
   {
-    question: 'Qual foi a melhor pessoa que existiu no mundo?',
+    question: 'PERGUNTA PERGUNTA PERGUNTA PERGUNTA',
     answer: 'Logicamente é o danny devito'
   }
 ]
