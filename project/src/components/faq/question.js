@@ -1,7 +1,7 @@
 import React from 'react'
 import './question.scss'
 
-import ArrowFaq from '../../images/arrow-faq.js'
+import ArrowFaq from '../../assets/arrow-faq.js'
 
 export default class Question extends React.Component {
   state = {
