@@ -11,7 +11,7 @@ export default class TryMe extends React.Component {
           <span className='title-text'>Experimente nossa plataforma</span>
         </div>
         <div className='image-container'>
-          <img className='image' src={computador} alt="notebook-aulas" />
+          <img className='image' src={computador} alt="Na imagem, um computador com a tela de exercícios aberta." />
         </div>
       </div>
     );

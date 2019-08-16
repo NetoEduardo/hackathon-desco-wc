@@ -45,7 +45,7 @@ export default class Categories extends React.Component {
             <p>Listas de exercícios de vestibulares com questões inéditas e número de acertos e erros por disciplina.</p>
           </div>
         </Slider>
-        <img className='image-features' src={ImageFeatures} alt='' />
+        <img className='image-features' src={ImageFeatures} alt='Na imagem, uma foto de um computador com a tela de exercícios aberta e um tablet e um celular com uma aula passando.' />
     </div>
   );
 }

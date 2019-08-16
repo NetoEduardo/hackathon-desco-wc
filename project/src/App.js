@@ -28,8 +28,8 @@ export default class App extends React.Component {
       <Categories id={'categories'} className={'container-categories'} />
       <Features id={'features'} className={'container-features'}/>
       <TryMe />
-      <Faq />
       <SocialProof />
+      <Faq />
       <Footer />
     </div>
   );
