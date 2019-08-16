@@ -27,22 +27,22 @@ export default class SocialProof extends React.Component {
             <section className='central-social-proof'>
               <Slider className='slider-social' {...settings}>
                 <div className='item-1-social'>
-                    <img src={ barbara } alt='Na imagem, a foto de perfil da aluna Barbara Barbosa'/>
-                    <p>"Muito bom! O melhor custo benefício do mercado!!! É claro que existe sempre um professor melhor, uma matéria da qual gostamos mais etc!! Mas, no geral o curso é muito bom e tem correspondido as expectativas!! Recomendo o curso para quem deseja se aperfeiçoar!"</p>
+                    <img src={ barbara } alt='Na imagem, a foto de perfil da aluna Bábara Barbosa.'/>
+                    <p>"Muito bom! O melhor custo benefício do mercado!!! No geral o curso é muito bom e tem correspondido as expectativas!! Recomendo o curso para quem deseja se aperfeiçoar!"</p>
                     <span>Barbara Barbosa</span>
                 </div>
                 <div className='item-2-social'>
-                    <img src={ matheus } alt='Na imagem, a foto de perfil do aluno Matheus Rubello'/>
+                    <img src={ matheus } alt='Na imagem, a foto de perfil do aluno Matheus Rubello.'/>
                     <p>"Excelente curso! Além de ótimas aulas, o curso é extremamente sério. Recomendo à todos que desejam um curso com ótimo custo benefício e qualidade. Obg."</p>
                     <span>Matheus Rubello</span>
                 </div>
                 <div className='item-3-social'>
-                    <img src={ livia } alt='Na imagem, a foto de perfil da aluna Lívia Albuquerque'/>
+                    <img src={ livia } alt='Na imagem, a foto de perfil da aluna Lívia Albuquerque.'/>
                     <p>“O descomplica foi essencial no meu processo de aprendizagem e esclarecimento de dúvidas durante toda minha jornada para aprovação no enem, super indico.”</p>
                     <span>Lívia Albuquerque</span>
                 </div>
               </Slider>
-              <button className='green-button'>Começar a estudar</button>
+              <button className='green-button' onClick={this.props.onClick}>Começar a estudar</button>
             </section>
           </div>
         );

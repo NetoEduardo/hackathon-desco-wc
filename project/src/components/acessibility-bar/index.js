@@ -64,13 +64,13 @@ export default class AcessbilityBar extends React.Component {
            <div id="ta" className={`container-header${showBar ? ' active' : ' deactive'}`} >
                <div className="component-header">
                    <div className="fontsize-control">
-                       <span className="`access-tittle`">Acessibilidade: </span>
-                       <span onClick={this.AumentaFonte} className="acess-itens -big">A+</span>
+                       <span className="`access-tittle`">Acessibilidade </span>
+                       <span className="acess-itens -big">A+</span>
                        <span className="acess-itens -normal">A</span>
                        <span onClick={this.DiminuirFonte}className="acess-itens -small">A-</span>
                    </div>
                    <div className="contrast" id="ta">
-                       <span className="contrast-text">Contraste: </span>
+                       <span className="contrast-text">Contraste </span>
                            <span className="contrast-itens -lightGreen -active" />
                            <span className="contrast-itens -white" />
                            <span className="contrast-itens -black" />

@@ -3,7 +3,7 @@
     background-color: #f8f8f8;
     position: sticky;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'AprovaSans', sans-serif;
     height: 30px;
     padding: 10px 0;
     width: 100vw;
@@ -47,12 +47,19 @@
  
         .contrast {
             float: right;
+            display: flex;
+            align-items: center;
+            padding: 7px 0;
+
+            .contrast-text {
+                margin-right: 15px;
+            }
  
             .contrast-itens {
                 display: inline-block;
-                margin-right: 10px;
-                height: 17px;
-                width: 17px;
+                margin-right: 22px;
+                height: 15px;
+                width: 15px;
                 border-radius: 100%;
                 box-sizing: border-box;
                 transition: transform 200ms linear;
@@ -78,10 +85,6 @@
  
             .contrast-itens.-black {
                 background-color:black;
-            }
- 
-            .contrast-itens.-darkGreen {
-                background-color:#239E5D;
             }
         }
     }

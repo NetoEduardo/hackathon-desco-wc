@@ -1,7 +1,8 @@
+
   .container-social-proof {
     position: relative;
     clear: both;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     border-top: 1px solid #eaeaea;
     
@@ -12,10 +13,10 @@
       align-items: center;
       min-height: 760px; 
       width: 80vw;
-      height: 90vh;
+      height: 60vh;
       top: 50%;
       left: 50%;
-      margin: -45vh 0 0 -40vw;
+      margin: -30vh 0 0 -40vw;
     }
   
     .slider-social {
@@ -38,7 +39,7 @@
       .slick-dots {
         width: 200px;
         bottom: initial;
-        top: 85%;
+        top: 65%;
         left: 50%;
         margin-left: -100px;
         position: absolute;
@@ -64,23 +65,23 @@
       align-items: center;
 
       img {
-        width: 13%;
+        width: 120px;
       }
 
       p {
         font-family: "InterUI", sans-serif;
         letter-spacing: -0.5px;
-        width: 55vw;
+        width: 740px;
         height: 40vh;
         font-size: 25px;
         text-align: center;
         margin-top: 40px;
-        line-height: 30px;
+        line-height: 35px;
       }
 
       span {
         position: absolute;
-        top: 70%;
+        top: 56%;
         font-family: 'InterUI', sans-serif;
         color: #b1b1b1;
       }
@@ -94,7 +95,7 @@
       border-radius: 50px;
       background-color: #00E88F;
       border: none;
-      top: 80%;
+      top: 65%;
       font-size: 15px;
       font-weight: bold;
 
