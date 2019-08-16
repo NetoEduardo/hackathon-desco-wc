@@ -6,7 +6,7 @@ import Features from './components/features';
 import SocialProof from './components/social-proof';
 import TryMe from './components/try-me';
 import Faq from './components/faq';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 
 import { animateScroll } from 'react-scroll'
 import './App.scss'
@@ -30,7 +30,7 @@ export default class App extends React.Component {
       <Faq />
       <SocialProof />
       <TryMe />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
   }

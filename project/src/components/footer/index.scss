@@ -1,17 +1,20 @@
 .container-footer {
   position: absolute;
   height: 100vh;
-  padding: 0 5vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
 
-  @media (max-width: 1000px) {
+  .wrapper-footer {
+    padding: 0 5%;
   }
+
   .header {
     position: relative;
     height: 20vh;
-    width: 100vw;
+    width: 100%;
 
     .logo {
       position: absolute;
@@ -30,7 +33,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px solid #eaeaea;
 
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -38,10 +40,10 @@
     }
 
     .column {
-      width: 20vw;
+      width: 17vw;
 
       @media (max-width: 1000px) {
-        width: 100vw;
+        width: 100%;
         font-size: 30px;
       }
 
@@ -69,8 +71,8 @@
   .rodape {
     position: relative;
     bottom: 0;
-    width: 100vw;
     height: 10vh;
+    margin-top: 1%;
 
     a {
       .logo-menor {
@@ -86,11 +88,10 @@
 
     .images {
       position: absolute;
-      width: 40vw;
+      width: auto;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      right: 0;
+      right: 5%;
       list-style-type: none;
 
       li {

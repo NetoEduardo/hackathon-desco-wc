@@ -16,6 +16,7 @@ export default class Question extends React.Component {
     return (
       <div className={`question-answer-container`}>
         <p className={`question-answer`}>{answer}</p>
+        <button className='faq-button'>Assinar agora</button>
       </div>
     );
   }
