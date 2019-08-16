@@ -6,7 +6,7 @@
     font-family: 'AprovaSans', sans-serif;
     height: 30px;
     padding: 10px 0;
-    width: 100vw;
+    width: 100%;
     top: 0;
     z-index: 3;
     transition: all .10s ease-out 0s;
@@ -76,15 +76,18 @@
  
             .contrast-itens.-lightGreen {
                 background-color:#00e88f;
+                font-size: 0;
             }
  
             .contrast-itens.-white {
                 border: 1px solid #979797;
                 background-color:white;
+                font-size: 0;
             }
  
             .contrast-itens.-black {
                 background-color:black;
+                font-size: 0;
             }
         }
     }

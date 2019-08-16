@@ -10,8 +10,8 @@ export default class Footer extends React.Component {
         <section className='container-footer'>
           <div className='wrapper-footer'>
             <header className='header'>
-              <a tabIndex="22" href='/'>
-                <img className='logo' alt='logo-descomplica' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
+              <a href='/'>
+                <img tabIndex="24" className='logo' alt='logo-descomplica' src='https://d3awytnmmfk53d.cloudfront.net/landings/static/images/descomplica2.svg' />
               </a>
             </header>
             <div className='categories'>
@@ -21,7 +21,7 @@ export default class Footer extends React.Component {
                   <ul className='links'>
                     {category.subcategories.map((subcategory, index) => (
                       <li>
-                        <a tabIndex={`23` + index} href={subcategory.link}>{subcategory.title}</a>
+                        <a tabIndex={25 + index}href={subcategory.link}>{subcategory.title}</a>
                       </li>
                     ))}
                   </ul>
