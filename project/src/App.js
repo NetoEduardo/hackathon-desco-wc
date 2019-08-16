@@ -26,7 +26,7 @@ export default class App extends React.Component {
     <div className="app">
       <Hero id={'hero'} className={'container-hero'} onClick={this.scrollTo}/>
       <Categories id={'categories'} className={'container-categories'} />
-      <Features />
+      <Features id={'features'} className={'container-features'}/>
       <Faq />
       <SocialProof />
       <TryMe />
